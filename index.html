@@ -27,19 +27,28 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2">
-                <img class="rounded float" src="src/images/south-korea-flag.jpg" alt="south-korea-flag">
+            <div class="col-2"><!--logo-->
+                <img class="rounded float" src="src/images/south-korea.png" alt="south-korea-flag">
             </div>
-            <div class="container col-8">
-                <ul class="nav flex nav-pills" role="tablist">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Page1</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Page2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Page3</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Page4</a></li>
+            <div class="col-9 align-self-center"><!--navbar large devices-->
+                <ul class="nav nav-pills justify-content-end " role="tablist">
+                    <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#">Page1</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#">Page2</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#">Page3</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#">Page4</a></li>
                 </ul>
+            </div><!--main body-->
+            <div class="container border col-9 bg-light min-vh-100">
+                <p>body</p>
             </div>
-
+            <div class="container-fluid bg-dark text-white text-center fs-3"><!--footer-->
+                <div class="row">
+                    <div class="col">Douglas, Rajal and Rodrigo</div>
+                    <div class="col">Responsive Web Design</div>
+                    <div class="col">16 Dec 2022</div>
+                </div>
+            </div>
         </div>
     </div><!--end of the body container-->
 </body>
