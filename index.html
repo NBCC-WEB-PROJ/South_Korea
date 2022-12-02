@@ -16,7 +16,7 @@
                
         @media (max-width: 575px) {  
              .footer {
-                font-size: 0.5em;
+                font-size: 0.7em;
              }
         }
         @media (min-width: 576px) {
@@ -37,8 +37,9 @@
             <div class="col-2"><!--logo-->
                 <img class="rounded float" src="src/images/south-korea.png" alt="south-korea-flag">
             </div>
-            <div class="d-md-none"> <!--navbar small devices-->        
-                <div class="container-fluid"> 
+            <div class="col-10 align-self-center d-md-none"> <!--navbar small devices-->        
+                <div class="col-2"></div>
+                <div class="col-2 container-fluid"> 
                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">Menu</button>
                 </div>
                 <div class="offcanvas offcanvas-start" id="menu">
@@ -67,10 +68,11 @@
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#">Page4</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#">Page5</a></li>
                 </ul>
-            </div><!--main body-->
-            <div class="container border col-9 bg-light min-vh-100">
-                <p>body</p>
             </div>
+            <!--********     MAIN CONTENT BODY    ********-->
+            <div class="container border col-md-9 bg-light min-vh-100">
+                <p>body</p>
+            </div><!--end of the main body-->
             <div class="footer container-fluid bg-dark text-white text-center"><!--footer-->
                 <div class="row">
                     <div class="col">Douglas, Rajal and Rodrigo</div>
@@ -79,6 +81,6 @@
                 </div>
             </div>
         </div>
-    </div><!--end of the body container-->
+    </div>
 </body>
 </html>
