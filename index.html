@@ -31,7 +31,17 @@
                 font-size: 1.5em;
              }            
         }    
-        #more {display: none;}   
+        #more {display: none;}  
+        #map {
+            max-height: 350px;
+            display: block;
+            -webkit-user-select: none;
+            margin: auto;
+            cursor: zoom-in;
+            background-color: hsl(0, 0%, 90%);
+            transition: background-color 300ms;
+            
+        } 
 
     </style>
 </head>
@@ -53,7 +63,7 @@
                     <div class="offcanvas-body">
                         <ul class="nav flex-column nav-pills col-4" role="tablist">                        
                             <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#Home">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Demography">Demography</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#History">History</a></li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Culture">Culture</a></li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Economy">Economy</a></li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Education">Education</a></li>
@@ -65,7 +75,7 @@
             <div class="col-10 align-self-center d-none d-md-block"><!--navbar large devices-->
                 <ul class="nav nav-pills justify-content-end " role="tablist">
                     <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#Home">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Demography">Demography</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#History">History</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Culture">Culture</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Economy">Economy</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Education">Education</a></li>
@@ -76,8 +86,22 @@
             <div class="container border tab-content col-md-11 col-lg-9 bg-light min-vh-100">
                 <div id="Home" class="container-fluid tab-pane active">                    
                     <div class="row">
-                        <div class="col">
-                            <h2 class="text-center">The history of South-Korea</h2>
+                        <div>
+                            <h2 class="text-center py-3">The Republic of Korea</h2>                            
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img id="map" class="mx-auto d-block img-fluid" src="src/images/World-Data-Locator-Map-South-Korea.webp" alt="map">
+                        </div>
+                        <div class="col-md-6 pt-2">
+                            <p>&#9673; South Korea, officially the Republic of Korea, is a country in East Asia, its area is 100,363 km&#178; (107th), constituting the southern part of the Korean Peninsula and sharing a land border with North Korea.<br>&#9673; Its western border is formed by the Yellow Sea, while its eastern border is defined by the Sea of Japan.<br>South Korea claims to be the sole legitimate government of the entire peninsula and adjacent islands.</p>
+                        </div>
+                            
+                    </div>
+                </div>
+                <div id="History" class="container-fluid tab-pane fade">
+                    <div class="row">                        
+                        <div class="col"><!--history content-->
+                            <h2 class="text-center py-3">The history of South-Korea</h2>
                             <ul class="nav nav-tabs">
                                 <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#history1">01</a></li>
                                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history2">02</a></li>
@@ -89,8 +113,6 @@
                                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history8">08</a></li>
                             </ul>
                             <div class="tab-content border border-top-0">
-                                
-                                
                                 <div id="history1" class="container-fluid tab-pane active">
                                     <div class="row">
                                         <div class="col-lg-6">
@@ -216,15 +238,10 @@
                                             </p> 
                                         </div>
                                     </div>                                     
-                                </div>
-                                
-                                
+                                </div>    
                             </div>
-                        </div>     
+                        </div> <!--end of history content-->    
                     </div>
-                </div>
-                <div id="Demography" class="container-fluid tab-pane fade">
-                    <p>Demography</p>
                 </div>
                 <div id="Culture" class="container-fluid tab-pane fade">
                     <p>Culture</p>
