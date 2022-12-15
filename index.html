@@ -24,13 +24,22 @@
         @media (min-width: 576px) {
             .footer {
                 font-size: 1em;
-             }         
+             }
+             .textCard {
+            min-height: 97px;
+            }         
         }
         @media (min-width: 992px) {
             .footer {
                 font-size: 1.5em;
-             }            
+             }
+                         
         }    
+        @media (min-width: 1200px) {
+            .textCard {
+            min-height: 144px;
+            }            
+        }
         #more {display: none;}  
         #map {
             max-height: 350px;
@@ -44,6 +53,16 @@
         #carousel {
             max-width: 640px;
         }
+        .card {
+            background-color: #fff;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            transition: box-shadow .25s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
 
     </style>
 </head>
@@ -101,49 +120,49 @@
                         <div class="row g-3"> <!--Demographics-->
                             <div class="col-md-6 col-xl-3">
                                 <div class="card">
-                                    <a class="img-card" href=".."><img class="img-fluid" src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg"/></a>
+                                    <a class="img-card mx-auto" href="https://en.wikipedia.org/wiki/South_Korea#Demographics"><img class="img-fluid" src="src/images/Population.png"/></a>
                                     <div class="card-content px-1">
                                         <h4 class="card-title text-center">Population</h4>
-                                        <p class="">President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet for the national soccer team.</p>
+                                        <p class="textCard">In April 2016, South Korea's population was estimated to be around 50.8 million by National Statistical Office.</p>
                                     </div>
                                     <div class="card-read-more">
-                                        <a href=".." class="btn btn-link btn-block">Read More</a>
+                                        <a href="https://en.wikipedia.org/wiki/South_Korea#Demographics" class="btn btn-link btn-block">Read More</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-3">
                                 <div class="card">
-                                    <a class="img-card" href=".."><img class="img-fluid" src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg"/></a>
+                                    <a class="img-card mx-auto" href="https://en.wikipedia.org/wiki/Demographics_of_South_Korea#Ethnic_groups"><img class="img-fluid" src="src/images/Ethnics.jpg"/></a>
                                     <div class="card-content px-1">
                                         <h4 class="card-title text-center">Ethnic Groups</h4>
-                                        <p class="">President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet for the national soccer team.</p>
+                                        <p class="textCard">South Korea is a largely ethnically homogeneous country with an absolute majority of the Korean ethnicity from estimates.</p>
                                     </div>
                                     <div class="card-read-more">
-                                        <a href=".." class="btn btn-link btn-block">Read More</a>
+                                        <a href="https://en.wikipedia.org/wiki/Demographics_of_South_Korea#Ethnic_groups" class="btn btn-link btn-block">Read More</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-3">
                                 <div class="card">
-                                    <a class="img-card" href=".."><img class="img-fluid" src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg"/></a>
+                                    <a class="img-card mx-auto" href="https://en.wikipedia.org/wiki/Religion_in_South_Korea"><img class="img-fluid" src="src/images/religion.jpg"/></a>
                                     <div class="card-content px-1">
-                                        <h4 class="card-title text-center">Religious Groups</h4>
-                                        <p class="">President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet for the national soccer team.</p>
+                                        <h4 class="card-title text-center">Religion</h4>
+                                        <p class="textCard">Korea is a country where three of the world's major religions, Christianity, Buddhism, and Confucianism peacefully coexist.</p>
                                     </div>
                                     <div class="card-read-more">
-                                        <a href=".." class="btn btn-link btn-block">Read More</a>
+                                        <a href="https://en.wikipedia.org/wiki/Religion_in_South_Korea" class="btn btn-link btn-block">Read More</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xl-3">
                                 <div class="card">
-                                    <a class="img-card" href=".."><img class="img-fluid" src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg"/></a>
+                                    <a class="img-card mx-auto" href="https://en.wikipedia.org/wiki/Demographics_of_South_Korea#Languages"><img class="img-fluid" src="src/images/language.png"/></a>
                                     <div class="card-content px-1">
-                                        <h4 class="card-title text-center">Language Groups</h4>
-                                        <p class="">President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet for the national soccer team.</p>
+                                        <h4 class="card-title text-center">Language</h4>
+                                        <p class="textCard">The Korean language is the native language spoken by the vast majority of the population.</p>
                                     </div>
                                     <div class="card-read-more">
-                                        <a href=".." class="btn btn-link btn-block">Read More</a>
+                                        <a href="https://en.wikipedia.org/wiki/Demographics_of_South_Korea#Languages" class="btn btn-link btn-block">Read More</a>
                                     </div>
                                 </div>
                             </div>
