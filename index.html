@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <style>
         .card {
             box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
@@ -33,35 +32,7 @@
             font-weight: 400;
         }
 
-        .wrapper {
-            display: table;
-            height: 100%;
-            width: 100%;
-        }
-
-        .container-fostrap {
-            display: table-cell;
-            padding: 1em;
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        .fostrap-logo {
-            width: 100px;
-            margin-bottom: 15px
-        }
-
-        h1.heading {
-            color: #fff;
-            font-size: 1.15em;
-            font-weight: 900;
-            margin: 0 0 0.5em;
-            color: #505050;
-        }
-
         .card {
-            display: block;
-            margin-bottom: 20px;
             line-height: 1.42857143;
             background-color: #fff;
             border-radius: 2px;
@@ -73,47 +44,19 @@
             box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
-        .img-card {
-            width: 100%;
-            height: 200px;
-            border-top-left-radius: 2px;
-            border-top-right-radius: 2px;
-            display: block;
-            overflow: hidden;
+        .date {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            overflow-x: hidden;
+            color: #7b8388;
+            position: relative;
         }
 
-        .img-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: all .25s ease;
-        }
+        .list-title {
+            text-transform: capitalize;
+            font-weight: bold;
 
-        .card-content {
-            padding: 15px;
-            text-align: left;
-        }
-
-        .card-title {
-            margin-top: 0px;
-            font-weight: 700;
-            font-size: 1.65em;
-        }
-
-        .card-title a {
-            color: #000;
-            text-decoration: none !important;
-        }
-
-        .card-read-more {
-            border-top: 1px solid #D4D4D4;
-        }
-
-        .card-read-more a {
-            text-decoration: none !important;
-            padding: 10px;
-            font-weight: 600;
-            text-transform: uppercase
         }
 
         @media (max-width: 575px) {
@@ -174,13 +117,15 @@
                             <li class="nav-item"><a class="nav-link active" data-bs-toggle="pill"
                                     href="#History">History</a></li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill"
-                                    href="#Demography">Demography</a></li>
+                                    href="#Demography">Demography</a>
+                            </li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Culture">Culture</a>
                             </li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Economy">Economy</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill"
-                                    href="#Education">Education</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#KoreanLife">Korean
+                                    Life</a>
+                            </li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Sports">Sports</a>
                             </li>
                         </ul>
@@ -198,7 +143,8 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Culture">Culture</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Economy">Economy</a></li>
-                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#KoreanLife">Korean Life</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Sports">Sports</a></li>
                 </ul>
             </div>
@@ -207,775 +153,1039 @@
             <!--********     MAIN CONTENT BODY    ********-->
             <div class="container border tab-content col-md-11 col-lg-9 bg-light min-vh-100">
                 <div id="Home" class="container-fluid tab-pane active">
+                </div>
+
+                <div id="History" class="container-fluid tab-pane fade">
                     <div class="row">
-                        <div class="col-6">
-                            <div class="p-4 my-4 bg-light rounded-3">
-                                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="0" class="active" aria-current="true"
-                                            aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                        <button type="button" data-bs-target="#carouselExampleCaptions"
-                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <div class="col">
+                            <h2 class="text-center">The history of South-Korea</h2>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab"
+                                        href="#history1">01</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history2">02</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history3">03</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history4">04</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history5">05</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history6">06</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history7">07</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history8">08</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content border border-top-0">
+
+
+                                <div id="history1" class="container-fluid tab-pane active">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/Beginnings.jpg" alt="The Beginnings of Korea's History">
+                                        </div>
+                                        <div class="col-lg-6 ">
+                                            <h5 class="text-center pt-2">The Beginnings of Korea's History (Prehistoric
+                                                Times - Gojoseon)</h5>
+                                            <p>The history of the Korean nation began in Manchuria and the Korean
+                                                Peninsula when people started settling there 700,000 years ago.
+                                                Representative historic sites associated with the Paleolithic Age, when
+                                                people made tools of animal horns and chipped stone tools, include the
+                                                Komun Moru ruins in Sangwon, Pyeongannam-do, the Jeongok-ri Site in
+                                                Yeoncheon, <span id="collap1" class="collapse"> Gyeonggi-do, the
+                                                    Seokjangri Prehistory Site in Gongju, Chungcheongnam-do, and the
+                                                    Durubong Cave Site in Cheongju, Chungcheongbuk-do. The early
+                                                    inhabitants of the peninsula survived by hunting animals and
+                                                    collecting edible plants in groups.<br>
+                                                    In Korea, the Neolithic Age began around 8,000 BCE. People started
+                                                    farming, cultivating cereals such as millet, and used polished stone
+                                                    tools. They started settling down permanently in places and formed
+                                                    clan societies. One of the most representative features of the
+                                                    Neolithic Age is comb-patterned pottery, examples of which have been
+                                                    found all across the Korean Peninsula, including in Amsadong, Seoul,
+                                                    in Namgyeong, Pyongyang, and in Suga-ri, Gimhae. The Bronze Age
+                                                    started around the 10th century BCE on the Korean Peninsula and the
+                                                    15th century BCE in Manchuria. Historic sites associated with the
+                                                    Bronze Age are found in Liaoning and Jilin provinces, China and
+                                                    across the Korean Peninsula. With the development of the Bronze Age
+                                                    culture, a society emerged in which the head of a clan exercised
+                                                    great influence. The strongest clan leaders started merging many
+                                                    clans into one, and these groups very gradually developed into early
+                                                    states.<br>
+                                                    The tribes that played a central role in the establishment of
+                                                    Gojoseon, which emerged as the first recognizable state of the
+                                                    Korean people, believed in the King of Heaven and worshipped bears,
+                                                    respectively. The two factions jointly upheld Dangun Wanggeom as
+                                                    their chief priest and political leader. Gojoseon fostered an
+                                                    independent culture in Liaoning, China and along the Daedonggang
+                                                    River. By the 3rd century BCE, kings such as King Bu and King Jun
+                                                    had become powerful and bequeathed the throne to their sons. They
+                                                    established a solid system of rule, backed by high-ranking retainers
+                                                    and military officers.<br>
+                                                    Towards the end of the 3rd century, the Qin dynasty was replaced by
+                                                    the Han dynasty in China, creating a period of social upheaval. Many
+                                                    people moved southward to Gojoseon. Their leader, Wiman, acceded to
+                                                    the throne in 194 BCE and Gojoseon expanded its territory under his
+                                                    rule. By this time, Gojoseon had adopted Iron Age culture, developed
+                                                    agriculture and various handicrafts, and increased its military
+                                                    strength. It tried to monopolize profits, while serving as an
+                                                    intermediate in the trade between the Korean Peninsula and China,
+                                                    taking advantage of its geographical proximity to China. This led to
+                                                    confrontation between Gojoseon and the Han dynasty. Han attacked
+                                                    Gojoseon with a large number of ground and naval forces. Gojoseon
+                                                    defiantly resisted the attack and won a great victory in the early
+                                                    stage of the war, but its capital at Wanggeomseong Fortress fell
+                                                    after a year of war, and Gojoseon collapsed in 108 BCE.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap1">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="./src/images/Home/president.png" class="d-block w-100" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5>First slide label</h5>
-                                                <p>Some representative placeholder content for the first slide.</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./src/images/Home/Mars.png" class="d-block w-100" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5>Second slide label</h5>
-                                                <p>Some representative placeholder content for the second slide.</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./src/images/Home/Mascot.png" class="d-block w-100" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5>Third slide label</h5>
-                                                <p>Some representative placeholder content for the third slide.</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./src/images/Home/Football.jpg" class="d-block w-100" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5>Third slide label</h5>
-                                                <p>Some representative placeholder content for the third slide.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
                                 </div>
+                                <div id="history2" class="container-fluid tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/threekingdons.jpg"
+                                                alt="Three Kingdoms and Other States">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5 class="text-center pt-2">Three Kingdoms and Other States</h5>
+                                            <p>Towards the end of the Gojoseon Period, tribal states came into being one
+                                                after another in Manchuria and on the Korean Peninsula. Buyeo was
+                                                established in the plains along the Songhua River in Manchuria and
+                                                Jilin. The people of Buyeo grew crops and raised livestock, including
+                                                horses. They also made furs. By the early 1st century CE, they started
+                                                <span id="collap2" class="collapse"> calling their main leader the King
+                                                    and actively engaged with other countries, even entering into
+                                                    diplomatic relations with China. By the end of the 3rd century,
+                                                    Buyeo had been incorporated into Goguryeo. The people of Buyeo held
+                                                    an annual festival called Yeonggo in December. During the festival,
+                                                    they held a sacrificial rite for heaven, sang and danced together,
+                                                    and released prisoners.<br>
+                                                    Buyeo fell apart during the establishment of the regional
+                                                    confederation, but the factions that founded Goguryeo and Baekje
+                                                    took pride in their status as the inheritors of Buyeo. Samguk sagi
+                                                    (History of the Three Kingdoms) states that Gojumong, who founded
+                                                    Goguryeo in 37 BCE, was originally from Buyeo. Goguryeo prospered
+                                                    greatly through victorious wars in areas close to Baekdusan Mountain
+                                                    and along the Amnokgang (Yalu) River. Right after its foundation,
+                                                    Goguryeo conquered a number of small states in the area and moved
+                                                    its capital to Gungnaeseong (Tonggu) near the Amnokgang River.
+                                                    Through many wars, it drove away the factions loyal to the Han
+                                                    dynasty and expanded its territory as far as Liaodong in the west
+                                                    and to the northeast of the Korean Peninsula. It became a powerful
+                                                    state, exerting control over Manchuria and the northern part of the
+                                                    Korean Peninsula.<br>
+                                                    There were also a number of small states, such as Okjeo and Dongye,
+                                                    in present-day Hamgyeong-do and the northern parts of Gangwon-do
+                                                    along the east coast of the Korean Peninsula. Located in outlying
+                                                    areas, they did not develop very rapidly. Okjeo offered tributes
+                                                    such as salt and fish to Goguryeo. Dongye held a sacrificial rite
+                                                    for heaven called Mucheon in October to build a spirit of
+                                                    collaboration by singing and dancing together. Its specialties
+                                                    included dangung (an archery bow) and gwahama (a horse small enough
+                                                    to pass unhindered beneath fruit trees). These two states were also
+                                                    incorporated into Goguryeo.<br>
+                                                    The area south of Gojoseon was occupied by a large group of small
+                                                    states including Mahan, Jinhan, and Byeonhan. Mahan was a
+                                                    confederacy of fifty-four small states (composed of 100,000
+                                                    households in total) located in present-day Gyeonggi-do,
+                                                    Chungcheong-do, and Jeolla-do. Byeonhan was located in presentday
+                                                    Gimhae and Masan while Jinhan located in present-day Daegu and
+                                                    Gyeongju. Each of the latter two was composed of 40,000-50,000
+                                                    households. The three mini-states were collectively known as Samhan
+                                                    (Three Han States). The people of Samhan held rites of sacrifice for
+                                                    heaven in May and October. On such occasions, they gathered together
+                                                    to enjoy liquor, food, singing and dancing.<br>
+                                                    Along with the spread of Iron Age culture and the development of
+                                                    farming skills, powerful states such as Goguryeo, Baekje and Silla
+                                                    gradually were established in Manchuria and on the Korean
+                                                    Peninsula.<br>
+                                                    Goguryeo was the first of the three Kingdoms to firmly establish
+                                                    itself as a sovereign country. It started expanding its territory in
+                                                    the late 1st century and strengthened a king-centered ruling system
+                                                    by the late 2nd century. By the early 4th century, King Micheon of
+                                                    Goguryeo had driven away factions loyal to the Han dynasty from the
+                                                    Korean Peninsula.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap2">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="history3" class="container-fluid tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/northernandsouthern.jpg"
+                                                alt="Northern and Southern States Period">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5 class="text-center pt-2">Northern and Southern States Period: Unified
+                                                Silla and Balhae</h5>
+                                            <p>With the unification of the three Kingdoms on the Korean Peninsula in
+                                                668, Silla enjoyed a marked expansion of both its territory and
+                                                population. Unified Silla entered a period of dazzling economic
+                                                development. It mended fences with Tang China. The two countries saw
+                                                vigorous exchanges between traders, monks, and Confucian scholars. Silla
+                                                exported <span id="collap3" class="collapse"> gold and silver handiworks
+                                                    and ginseng to Tang and imported books, ceramic ware, satin silk
+                                                    fabric, clothes, and craftwork products. Goods from Central Asia
+                                                    were introduced to Silla, and traders from that region paid visits
+                                                    to Silla via the Silk Road and sea routes.<br>
+                                                    The major ports of Silla included Ulsan and Danghangseong
+                                                    (present-day Hwaseong, Gyeonggi-do), through which numerous goods
+                                                    from Central and Southern Asia were imported. In the early 9th
+                                                    century, General Jang Bo-go of Silla established a forward base in
+                                                    Cheonghaejin (present-day Wando, Jeollanamdo) to deal with the
+                                                    pirate menace and encourage trade with nearby countries including
+                                                    China and Japan.<br>
+                                                    In the meantime, the survivors of the fallen Kingdom of Goguryeo
+                                                    resisted Tang China's rule. In 698, a group of them led by Dae
+                                                    Jo-yeong, jointly with the Mohe, founded Balhae near present-day
+                                                    Dongmiaoshan in Jilin province, China. The new Kingdom would
+                                                    eventually confront Silla in the south.<br>
+                                                    Balhae started expanding its territory and regained control over
+                                                    most of the former territory of Goguryeo. During the reign of King
+                                                    Mu, Balhae controlled the northern parts of Manchuria. King Mun
+                                                    reformed the system of governance and moved the capital to
+                                                    Sanggyeong (present-day Ningan-xian, Heilongjiang province) in about
+                                                    755. The people of Balhae took pride in their Goguryeo inheritance.
+                                                    Letters held in Japan show that the kings of Balhae referred to
+                                                    themselves as the Kings of Goguryeo. Balhae eventually grew so large
+                                                    and strong that the people of Tang China called it Haedong Seongguk
+                                                    (“prosperous country in the east”), but it fell in 926 as a result
+                                                    of an eruption of Baekdusan Mountain and an invasion of the Khitan
+                                                    people.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap3">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="history4" class="container-fluid tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/Goryeo.jpg" alt="Goryeo Dynasty">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5 class="text-center pt-2">Goryeo Dynasty</h5>
+                                            <p>By the late 8th century, Silla had been weakened by an internal struggle
+                                                for power among the nobility; by the 10th century, leaders of powerful
+                                                local factions, such as Gyeon Hwon and Gungye, had established their own
+                                                regimes. In 892, Gyeon Hwon established a Kingdom named Later Baekje,
+                                                with Wansanju as its capital, and gained control of present-day <span
+                                                    id="collap4" class="collapse"> Jeolla-do and Chungcheong-do.<br>
+                                                    In 901, Gungye, a member of the Silla royal family, founded Later
+                                                    Goguryeo in Songak (present-day Gaeseong), exerting control over
+                                                    present-day Gangwon-do and Gyeonggi-do. He expanded the territory,
+                                                    reformed the ruling system, and relocated the capital to Cheorwon.
+                                                    He also changed the name of the country to Taebong.<br>
+                                                    Gungye lost the support of his people while exerting control over
+                                                    local leaders and strengthening his claim to the throne. In 918, he
+                                                    was driven away by Wang Geon, a local leader from Songak. Wang Geon
+                                                    changed the name of the country to Goryeo, announced that the
+                                                    country would inherit Goguryeo, and moved the capital to Songak.
+                                                    Goryeo remained hostile to Later Baekje while actively promoting a
+                                                    policy of engaging Silla. In 935, Unified Silla was peacefully
+                                                    incorporated into Goryeo. Following a power struggle among leaders
+                                                    in Later Baekje, Gyeon Hwon surrendered to Wang Geon. In 936, Later
+                                                    Baekje fell to Goryeo. Thus, Wang Geon unified the Later Three
+                                                    Kingdoms on the Korean Peninsula.<br>
+                                                    Goryeo adopted Confucianism as its political ideology and
+                                                    established an effective education system by founding the Gukjagam
+                                                    (a national higher education institution) and numerous hyanggyo
+                                                    (local private schools). Buddhism also exerted considerable
+                                                    influence over Goryeo society in general. The Kingdom adopted a more
+                                                    tolerant approach towards the acceptance of other religions, as
+                                                    indicated by the rites called Yeondeunghoe (Lotus Lantern Festival)
+                                                    and Palgwanhoe (Festival of the Eight Vows), in which prayers were
+                                                    offered for blessing, based on a syncretic mix of folk religions and
+                                                    Buddhism.<br>
+                                                    Goryeo engaged in brisk trade with many countries, including the
+                                                    Song dynasty. Many traders from Song, Central Asia, Arabia,
+                                                    Southeast Asia and Japan travelled to Byeongnando, a gateway to the
+                                                    capital, Gaeseong. Traders from Song sold satin, silk and medicinal
+                                                    herbs, while traders from Goryeo sold hemp cloth and ginseng. Gems
+                                                    such as ivory, crystal, amber were imported from Arabia. Finally,
+                                                    the name Korea originated from Goryeo during this period.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap4">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="history5" class="container-fluid tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/Joseon.jpg" alt="Joseon Dynasty">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5 class="text-center pt-2">Joseon Dynasty</h5>
+                                            <p>Towards the end of the 14th century, Goryeo found itself in a difficult
+                                                situation due to internal and external problems, including a struggle
+                                                for power among the nobility and incursions by red-turbaned bandits and
+                                                Wako pirates. At that time, General Yi Seong-gye had become popular
+                                                among the people for his role in driving away foreign invaders. <span
+                                                    id="collap5" class="collapse"> He overthrew the Goryeo dynasty and
+                                                    founded a new dynasty, Joseon. As the first King Taejo of Joseon, he
+                                                    chose Hanyang (present day Seoul) – judged to be a propitious spot
+                                                    according to the principles of feng shui – as the capital of the new
+                                                    dynasty. He also ordered the construction of Gyeongbokgung Palace
+                                                    and the Jongmyo shrine, as well as roads and markets. The new
+                                                    capital, located in the center of the Korean Peninsula, was easily
+                                                    accessible via the Hangang River, which flowed directly through its
+                                                    heart.<br>
+                                                    King Taejong, the third king and son of the founder of the dynasty,
+                                                    made a significant contribution to stabilizing the centralized
+                                                    system of governance. He adopted a system under the law of hopae
+                                                    (identification tags) to figure out the population, and launched the
+                                                    major executive bodies called the Six Ministries of Joseon:
+                                                    Personnel (Ijo), Taxation (Hojo), Rites (Yejo), Military Affairs
+                                                    (Byeongjo), Punishments (Hyeongjo), and Public Works (Gongjo), all
+                                                    of which had to report directly to their king. King Sejong, the
+                                                    fourth king and a son of King Taejong, ushered in an era of great
+                                                    political, social, and cultural prosperity. Scholars at the
+                                                    Jiphyeonjeon (Hall of Worthies) developed strong and effective
+                                                    policies. During the reigns of Sejo, Yejong, and Seongjong, the
+                                                    Gyeongguk daejeon (National Code) was drawn up with the aim of
+                                                    establishing a long-lasting ruling system.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap5">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="history6" class="container-fluid tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/fallofJoseon.jpg" alt="The Fall of Joseon">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5 class="text-center pt-2">The Fall of Joseon: Imperial Japan's Annexation
+                                                of Korea</h5>
+                                            <p>With the onset of the Industrial Revolution in the 18th century,
+                                                capitalism developed in Europe and large businesses came into being.
+                                                European countries expanded their colonies in Asia and Africa. By the
+                                                mid-19th century, the western powers had forced the Qing dynasty of
+                                                China and Japan to open their doors and then asked the same of Joseon,
+                                                but <span id="collap6" class="collapse"> Joseon duly rejected such
+                                                    requests. Joseon did not yield to pressure applied in the form of
+                                                    naval attacks in 1866 (by the French) and 1871 (by the
+                                                    Americans).<br>
+                                                    In the ensuing period, the pressure did not stop. In 1875, Japan
+                                                    dispatched the battleship Unyo Maru to attack Ganghwado and
+                                                    Yeongjongdo Islands, demanding that Joseon open its doors to foreign
+                                                    trade missions. Ultimately, Joseon was forced to sign the highly
+                                                    unequal, one-sided Korean-Japanese Treaty, or Ganghwa Treaty (1876)
+                                                    with Japan in 1876 under military threat.<br>
+                                                    Subsequently, imperialist powers, including Japan, vied with each
+                                                    other to pillage Joseon's resources. In 1897, Joseon changed its
+                                                    name to the Korean Empire (Daehan Jeguk) and pushed ahead with
+                                                    reforms and an open-door policy, but it was too late. Japan soon won
+                                                    major victories in its wars against the Qing dynasty and Russia,
+                                                    emerged as a strong power in Northeast Asia, and took steps to annex
+                                                    Joseon. Many Korean patriots, including Ahn Jung-geun, resisted such
+                                                    a plan, but to no avail. In August 1910, the Korean Empire was
+                                                    formally annexed by the Empire of Japan.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap6">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="history7" class="container-fluid tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/Independence.jpg" alt="Independence Movement">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5 class="text-center pt-2">Independence Movement</h5>
+                                            <p>During the colonial period, the Japanese pillaged Joseon's resources,
+                                                banned the use of the Korean language-even going so far in 1939 as to
+                                                require Koreans to change their personal names to Japanese style
+                                                surnames and given names under the Name Order, and conscripted Koreans
+                                                into their work force or as uniformed soldiers in the Pacific War. <span
+                                                    id="collap7" class="collapse"> Koreans engaged in persistent
+                                                    struggles to regain their independence. They organized numerous
+                                                    clandestine organizations to fight the Japanese within the country
+                                                    such as Joseon National Sovereignty Restoration Group and The Korea
+                                                    Liberation Corps. They also established forward bases for the
+                                                    independence movement in China, Russia, and the United States and
+                                                    led unprecedentedly peaceful demonstrations. In March 1919, Korean
+                                                    leaders announced the Declaration of Independence. Students and
+                                                    ordinary people staged street demonstrations across the country
+                                                    shouting their motto, “Long Live Korean Independence!” The movement
+                                                    spread to the Koreans resisting in Manchuria, the Maritime Provinces
+                                                    of Siberia, the United States, Europe, and even to Japan. Following
+                                                    the March 1st Movement, organizations representing Koreans were
+                                                    established in Seoul, the Maritime Province of Siberia, and
+                                                    Shanghai. Of these, the Provisional Government of the Republic of
+                                                    Korea, which was established in Shanghai, China, is the country's
+                                                    first democratic republican government; it was equipped with a
+                                                    modern Constitution and a political system that separated the three
+                                                    basic branches (executive, legislature and judicial) of
+                                                    government.<br>
+                                                    Koreans also carried out armed struggles against the Japanese. In
+                                                    the 1920s, more than 30 Korean independence army units engaged in
+                                                    resistance activities in Manchuria and the Maritime Provinces of
+                                                    Siberia. For example, in June 1920, the Battle of Fengwudong was a
+                                                    battle that occurred in Fengwutung, Jilin province, China between
+                                                    Japanese forces and Korean independence militias led by Hong Beom-do
+                                                    to a big victory. Another is the Battle of Qingshanli, which was
+                                                    fought over six days in October 1920 between the Imperial Japanese
+                                                    Army and the Northern Military Administration Office Army led by Kim
+                                                    Jwa-jin along with other Korean armed groups. They won a great
+                                                    victory against Japanese troops in Helongxian, Manchuria.<br>
+                                                    In 1940, the Provisional Government of the Republic of Korea (PGK)
+                                                    organized the Korean Liberation Army in Chungqing, integrating many
+                                                    scattered volunteer independence armies and militias in Manchuria.
+                                                    The PGK declared war against Japan and dispatched troops to the
+                                                    front lines in India and Myanmar to fight on the side of the Allied
+                                                    Forces. Some young Koreans received special training from a special
+                                                    military unit of the United States to better equip themselves to
+                                                    attack Japanese forces in Korea. On August 15, 1945, Koreans finally
+                                                    received what they had looked forward to for so long: the country's
+                                                    liberation as a result of Japan's surrender in the Pacific War. U.S.
+                                                    and Soviet troops were deployed to the south and north of the 38th
+                                                    parallel, respectively to disarm Japanese troops remaining on the
+                                                    Korean Peninsula.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap7">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="history8" class="container-fluid tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="image" class="rounded d-block mx-auto img-fluid"
+                                                src="src/images/Democracy.jpg" alt="Transition to a Democracy">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5 class="text-center pt-2">Transition to a Democracy and Transformation
+                                                into an Economic Powerhouse</h5>
+                                            <p>On May 10, 1948, the first general election was held in a democratic
+                                                manner in South Korea under the UN's supervision to elect the 198
+                                                members of the National Assembly. In July of the same year, the
+                                                Constitution was enacted and Rhee Syngman and Yi Si-yeong, two
+                                                independence fighters deeply respected by Koreans, were elected as the
+                                                country's <span id="collap8" class="collapse"> first President and Vice
+                                                    President, respectively. On August 15, 1948, the Republic of Korea
+                                                    (ROK) was formally established as a liberal democracy, which
+                                                    inherited the legitimacy of the PGK. The UN recognized the
+                                                    government of the ROK as the only legitimate government on the
+                                                    Korean Peninsula.<br>
+                                                    However, to the north of the 38th parallel, a general election under
+                                                    UN supervision could not be carried out due to the Soviet Union's
+                                                    opposition. On September 9, 1948, the Democratic People's Republic
+                                                    of Korea (DPRK) was proclaimed as a communist country, and Kim
+                                                    Il-sung, who had served as an officer of the Soviet Russian Army,
+                                                    was sworn in as the President. Amid the confrontation between a free
+                                                    democracy in the south and a communist dictatorship in the north,
+                                                    the ROK government led by President Rhee Syngman was burdened with
+                                                    many issues such as establishing domestic order, eliminating
+                                                    vestiges of Japanese imperialism, and overcoming ideological
+                                                    confrontations between the left and the right.<br>
+                                                    On June 25, 1950, North Korean troops armed with Soviet-made tanks
+                                                    and fighters invaded the South, thus triggering an all-out war. The
+                                                    UN Security Council unanimously condemned the North Korean invasion
+                                                    and published a resolution recommending that its member states
+                                                    provide military assistance to South Korea. When the tide of the war
+                                                    turned against the North with the intervention of the UN Forces, the
+                                                    Chinese Red Army intervened in the war on the North's side. The two
+                                                    sides engaged in fierce battles until, on July 27, 1953, the two
+                                                    sides finally signed the armistice agreement. President Rhee Syngman
+                                                    did not sign the agreement, calling strongly for the prolongation of
+                                                    the war with the goal of unifying the entire country in the South's
+                                                    favor.</span>
+                                                <a class="btn" data-bs-toggle="collapse"
+                                                    data-bs-target="#collap8">Collapse...
+                                                    &raquo;</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
-                        <div class="col-3 p-5">
-                            <div class="col">
-                                <div class="card h-50">
-                                    <img src="https://www.korea.net/upload/main/news/image/16726174c928445b9942efe906a28e19_20221210215607.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold">Card title</h5>
-                                        <p class="card-text">Some quick example text to build make up the bulk of the
-                                            card's content.
+                    </div>
+                </div>
+                <div id="Demography" class="container-fluid tab-pane fade">
+                    <p>Demography</p>
+                </div>
+                <div id="Culture" class="container-fluid tab-pane fade">
+                    <p>Culture</p>
+                </div>
+                <div id="Economy" class="container-fluid tab-pane fade">
+                    <p>Economy</p>
+                </div>
+                <div id="KoreanLife" class="container-fluid tab-pane fade">
+                    <div class="container">
+                        <div class="col-sm-6 my-3">
+                            <h1 class="posts-title">Education</h1>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-9">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="news">
+                                            <img src="src/images/Korean Life/Education3.jpg" alt="Education"
+                                                class="img-fluid">
+                                            <h3>A quick look at the Korean education system</h3>
+                                            <p>The Korean education system stands out due to the high performance of
+                                                its students at the international level according to scores of the
+                                                Programme for International Student Assessment of the Organisation
+                                                for Economic Co-operation and Development in subjects like reading
+                                                and math.
+
+                                                Education is highly valued in the country as a way to obtain a
+                                                prestigious place. Thus students are under heavy pressure from
+                                                society, teachers and parents, especially when it comes to applying
+                                                to enter university.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="news">
+                                            <a href="single.html" class="img-link">
+                                                <img src="src/images/Korean Life/Education1.jpg" alt="Image"
+                                                    class="img-fluid">
+                                            </a>
+                                            <h3>Influence of Korean education system</h3>
+                                            <p>The Korean education system has served as a model for other countries
+                                                such as Singapore, Thailand, Taiwan and even those in Latin America
+                                                like Mexico, Argentina and Chile. This is because of the nations'
+                                                good relations with Korea through academic exchanges conducted by
+                                                governments and public and private organizations.
+                                                The number of foreign students in Korea rose to 154,000 last year,
+                                                according to L. Yoon of Statista, a provider of market and consumer
+                                                data, thanks to the nation's higher global image, scholarships for
+                                                international students and the popularity of Hallyu. </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                                <h2>Education System</h2>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <p class="list-title">Public and private</p>
+                                        <p>
+                                            Education in Korea is both private and public. The government provides
+                                            subsidies to students whether they are in public or private schools.</p>
+                                    </li>
+                                    <li>
+                                        <p class="list-title">Pre-school or kindergarten</p>
+                                        <p>This education level in Korea is not compulsory, so students receive no
+                                            subsidies. Yet an estimated 54% of children in Korea ages 2-5 attend
+                                            kindergarten.</p>
+                                    </li>
+                                    <li>
+                                        <p class="list-title">Elementary school</p>
+                                        <p>This is the official entry point of the Korean education system and students
+                                            range from ages 6-13.</p>
+                                    </li>
+                                    <li>
+                                        <p class="list-title">Middle school</p>
+                                        <p>Middle or junior high school consists of three grades and students ages
+                                            14-16.
                                         </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 p-5">
-                            <div class="col">
-                                <div class="card h-50">
-                                    <img src="https://www.korea.net/upload/main/news/image/16726174c928445b9942efe906a28e19_20221210215607.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title fw-bold">Card title</h5>
-                                        <p class="card-text">Some quick example text to build make up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row g-3">
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
+                    <section class="section posts-entry posts-entry-sm bg-light">
+                        <div class="container">
+                            <div class="col-sm-6 my-3">
+                                <h1 class="posts-title">Economy</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="card h-200">
+                                        <img src="src/images/Korean Life/Economy1.jpg" class="card-img-top"
+                                            alt="Economy">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">The Miracle on the Hangang River</h5>
+                                            <p class="card-text">South Korea has achieved rapid growth in a short
+                                                period. The country has displayed global competitiveness in various
+                                                fields such as mobile phones, semiconductors, automobiles,
+                                                chemicals, and steelmaking. In recent years, its cultural content,
+                                                including music, gaming, and webtoons, is emerging as an essential
+                                                industry in itself, taking the lead in the Korean economy.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="card h-200">
+                                        <img src="src/images/Korean Life/Economy2.jpg" class="card-img-top"
+                                            alt="Economy">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Open Market Capitalist Economy</h5>
+                                            <p class="card-text">The country has opened its market in most sectors,
+                                                including agriculture. Koreans have traditionally attached great
+                                                importance to agriculture, viewing it as the basis of the universe.
+                                                In 2015, the country also opened its rice market, the final area of
+                                                the agricultural sector not subject to full international
+                                                competition.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="card h-200">
+                                        <img src="src/images/Korean Life/Economy3.jpg" class="card-img-top"
+                                            alt="Economy">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Korean Industrial Standards</h5>
+                                            <p class="card-text">Information technology is the strongest element of
+                                                the country's economy, a sector that encompasses all the skills
+                                                required for management innovation and administrative reform as well
+                                                as ones relating to computer software, the Internet, multimedia, and
+                                                communication devices.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="card h-200">
+                                        <img src="src/images/Korean Life/Economy4.jpg" class="card-img-top"
+                                            alt="Economy">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Efforts to Grow as a Global Power</h5>
+                                            <p class="card-text">At present, South Korea is putting every effort
+                                                into transforming itself into a global economic system. Although the
+                                                country accomplished rapid growth within a short period of time,
+                                                this led to an imbalance in the development between large businesses
+                                                and small and medium-sized enterprises (SMEs) due to the economic
+                                                policy that was heavily dependent on the export led by large
+                                                enterprises.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </section>
 
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
+                    <section class="section posts-entry">
+                        <div class="container">
+                            <div class="col-sm-6 my-5">
+                                <h1 class="posts-title">Life</h1>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6 order-md-2">
+                                    <div class="news">
+                                        <img class="img-fluid" src="src/images/Korean Life/Religion.png" alt="Religion">
+                                    </div>
                                 </div>
-                                <div class="card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p>South Korea is a country where all the world's major religions,
+                                                Christianity, Buddhism, Confucianism, and Islam, peacefully coexist with
+                                                shamanism. According to the 2015 statistics, 44% of South Koreans
+                                                identified with a religion.
+
+                                                Among them, Buddhism and Confucianism have been more influential than
+                                                any others upon the life of the Korean people, and over half of the
+                                                country's listed cultural heritage is related to the two religions.
+                                                Since Buddhism arrived in Korea in 372, tens of thousands of temples
+                                                have been built across the country.
+
+                                                Adopted as the state ideology of the Joseon dynasty (1392 to 1910),
+                                                Confucianism is more of a code of ethical conduct that emphasizes the
+                                                importance of loyalty, filial piety, and ancestor worship. Based on the
+                                                concepts of Confucianism, the Joseon Dynasty established a code of
+                                                conduct to settle the manners and customs of the people's lives. It
+                                                stresses the importance of chung, the loyalty of subjects to their king,
+                                                hyo, filial, the obedience of children to their parents, and yeol,
+                                                duties between the husband and the wife.
+                                                Catholicism was introduced to Korea during the late Joseon dynasty
+                                                period by diplomats who returned from China and Catholic priests who
+                                                were invited by the Korean Christians. The early Roman Catholics in
+                                                Korea were subjected to severe persecution, but the religion continued
+                                                to spread among the common people across the country. Through the
+                                                persecution many Christians were martyred by the rulers at that time,
+                                                which led Korea to yield the world's fourth-largest number of Christian
+                                                saints.
+                                                Protestantism was brought to Korea during the late Joseon dynasty period
+                                                and quickly won people's hearts through school education and medical
+                                                services. Even today, Protestants in South Korea operate a great number
+                                                of educational institutions, middle and high schools, colleges and
+                                                universities, and medical centers.</p>
+                                        </li>
+
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
-                                </div>
-                                <div class=" card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
-                                </div>
-                                <div class=" card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
-                                </div>
-                                <div class=" card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
-                                </div>
-                                <div class=" card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card">
-                                <a class="img-card" href="..">
-                                    <img
-                                        src="https://www.korea.net/upload/content/image/01f5cc1a2c8d4dcd901a4c1578ba33ac_20221209093649.jpg" />
-                                </a>
-                                <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="..">
-                                            President Yoon hosts dinner for soccer team</a>
-                                    </h4>
-                                    <p class="">
-                                        President Yoon Suk Yeol and first lady Kim Keon Hee on Dec. 8 hosted a banquet
-                                        for the national soccer team.
-                                    </p>
+
+                            <div class="row g-3 my-5 ">
+                                <div class="col-md-12 order-md-4">
+                                    <div class="row row-cols-2">
+                                        <div class="col-md-6">
+                                            <div class="entry">
+                                                <img src="src/images/Korean Life/Clothing.png" alt="clothing"
+                                                    class="img-fluid">
+                                                <h2>Clothing and Fashion</h2>
+                                                <p>The Korean people learned to use various clothing materials, such as
+                                                    sambe (hemp), mosi (ramie), cotton, and silk, to make a range of
+                                                    clothing that was not only attractive but also provided them with
+                                                    effective protection even during the harshest winters and the
+                                                    hottest summers. They made warm winter clothes using the technique
+                                                    of wadding soft cotton between two pieces of cloth, silk, or cotton
+                                                    fabric, and stitching them in fine lines, and produced cool summer
+                                                    clothes with hemp and ramie. Hanbok is the traditional Korean attire
+                                                    made with these materials, typically featuring graceful lines and
+                                                    forms with a serene aura.
+
+                                                    Korea's traditional clothing, hanbok, has maintained its basic
+                                                    traditional features throughout Korea's 5,000-year history while its
+                                                    styles and forms have evolved in various ways based on the
+                                                    lifestyle, social conditions, and aesthetic taste of the times.
+
+                                                    History reveals that in general, Korean people in the past tended to
+                                                    prefer simple, white clothes to fancy ones. That is why they were
+                                                    often referred to as “the white-clad people” among their neighbors
+                                                    who admired them for being peaceful people. Nonetheless, Korea has
+                                                    also had a long tradition of enjoying colorful clothes with complex
+                                                    designs depending on the period and the wearer's social status.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="entry">
+                                                <img src="src/images/Korean Life/Food.jpg" alt="Food" class="img-fluid">
+                                                <h2>Traditional Food</h2>
+                                                <p>Since ancient times, the Korean people have believed that food and
+                                                    medicine share the same origin and hence perform the same function,
+                                                    following the adage that “food is the best medicine.” They believe
+                                                    that health and illness alike come from the food they consume and
+                                                    how they eat it, and this idea has played a crucial role in the
+                                                    development of traditional Korean medicine whose basic principle is
+                                                    that we should use medicine only after food has failed.
+
+                                                    One of the key words to understanding traditional Korean food is
+                                                    fermentation, a metabolic process that helps food to “mature” so
+                                                    that it can be stored for a longer period. The Korean foods that
+                                                    best represent the tradition of fermentation developed in Korea
+                                                    include doenjang (soybean paste), ganjang (soy sauce), gochujang
+                                                    (chili paste), and jeotgal (fermented fish sauce). The fermentation
+                                                    can take anywhere from several months to several years.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class=" card-read-more">
-                                    <a href=".." class="btn btn-link btn-block">
-                                        Read More
-                                    </a>
+                            </div>
+                    </section>
+
+                    <section class="section">
+                        <div class="container">
+                            <div class="row mb-4">
+                                <div class="col-sm-6">
+                                    <h2 class="posts-entry-title">Others</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 mb-4">
+                                    <div class="post-entry-alt">
+                                        <img src="src/images/Korean Life/inter.jpg" alt="Inter-Korean Exchanges"
+                                            class="img-fluid">
+                                        <div class="excerpt">
+                                            <h2>Inter-Korean Exchanges and Cooperation</h2>
+                                            <p>Between September 1990 and October 1992, the two Koreas engaged in a
+                                                total of eight bilateral meetings, including the first high-level talks
+                                                held in Seoul. In December 1991, the two sides signed the Agreement on
+                                                Reconciliation, Nonaggression, and Exchanges and Cooperation between the
+                                                South and the North (also called the Inter-Korean Basic Agreement). The
+                                                agreement focused on mutual respect between the two nations, the
+                                                renunciation of armed aggression, exchange and cooperation in many
+                                                sectors, and the guarantee of free exchange of people between the two
+                                                countries.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <div class="post-entry-alt">
+                                        <img src="src/images/Korean Life/housing.jpg" alt="Housing Architectural"
+                                            class="img-fluid">
+                                        <div class="excerpt">
+                                            <h2>Housing Architectural Techniques</h2>
+                                            <p>Korean people have developed unique architectural techniques to build
+                                                housing that is properly adapted to the natural environment, providing
+                                                dwellers with better protection. One of the distinctive features of the
+                                                hanok (traditional Korean house) is an underfloor heating system called
+                                                ondol. Ondol, which literally means “warm stones” and was developed
+                                                during the prehistoric period, refers to the system of channels running
+                                                beneath the stone floor of a room through which heat is delivered from
+                                                the fireplace in the kitchen. It is also designed to effectively draw
+                                                out the smoke through the under-the-floor passages connected to the
+                                                chimney.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <div class="post-entry-alt">
+                                        <img src="src/images/Korean Life/festivals.jpg" alt="festivals"
+                                            class="img-fluid">
+                                        <div class="excerpt">
+                                            <h2>Inter-Korean Exchanges and Cooperation</h2>
+                                            <p>Until the mid-20th century, Korea was primarily an agricultural society,
+                                                and the seasonal rhythms of daily life were organized by the lunar
+                                                calendar. Because farming was hugely important for the subsistence of
+                                                the members, such society developed a great variety of semi-religious
+                                                events intended to pray for a good harvest and abundant food. Those
+                                                events gradually evolved into communal celebrations and festivals.
+                                                Korean people celebrate the Lunar New Year's Day (Seol or Seollal), with
+                                                a special festival dish called tteokguk or rice cake soup.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="Sports" class="container-fluid tab-pane fade">
+                    <div class="section search-result-wrap">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Sports</h2>
+                                </div>
+                            </div>
+                            <div class="row entry">
+                                <div class="col-lg-12">
+                                    <div class="entry d-flex mb-4">
+                                        <div class="img-link me-4">
+                                            <img src="src/images/Korean Life/sport1.jpg" alt="Image">
+                                        </div>
+                                        <div>
+                                            <h2>History and Development of Korean Sports</h2>
+                                            <p>Korean sports have taken an active part in the global arena over the past
+                                                century, displaying Koreans' fighting spirit even in harsh environments.
+                                                In addition, South Korea's hosting of successful international
+                                                competitions has transformed the country into a sports powerhouse and
+                                                increased its citizens' interest in the field. South Korea continues to
+                                                create sports-friendly environments to further its status as a sports
+                                                powerhouse, with the vision to build a vibrant country where all people
+                                                can enjoy sports.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="entry d-flex mb-4">
+                                        <div class="img-link me-4">
+                                            <img src="src/images/Korean Life/sport2.jpg" alt="Image">
+                                        </div>
+                                        <div>
+                                            <h2>Infrastructure for Promoting Sports</h2>
+                                            <p>South Korea has a wider foundation for sports, as elite sports and sports
+                                                for all are closely connected with each other.
+
+                                                Football is one of South Korea's most popular sports. The K League
+                                                (Korea Professional Football League) runs from March to November each
+                                                year, with fierce competition among 12 regional teams. It's well worth
+                                                seeing the enthusiastic cheering by the Red Devils, the official
+                                                supporting group for the Korea Republic national football team. There
+                                                are a number of South Korean footballers who have succeeded on the
+                                                global stage including Park Ji-sung, who played for Manchester United,
+                                                Tottenham Hotspur forward Son Heung-min, and Ki Sung-yueng at Newcastle
+                                                United.
+
+                                                Koreans also love playing soccer as sports for all. Many South Korean
+                                                soccer lovers gather together early in the morning of a holiday to enjoy
+                                                the sport. The number of people who have joined grassroots football
+                                                teams stands at around 600,000 nationwide, forming regional football
+                                                clubs.
+
+                                                The popularity of baseball in the country is no less than that of
+                                                football. There are ten teams in the KBO league. In 2019, approximately
+                                                7.5 million people visited stadiums to enjoy professional baseball
+                                                games. More Korean players are making their way to Major League
+                                                Baseball, including pitcher Ryu Hyun-jin of the Toronto Blue Jays, right
+                                                fielder Choo Shin-soo of the Texas Rangers, and pitcher Kim Kwanghyun of
+                                                the St. Louis Cardinals, also boosting the people's interest in the
+                                                sport.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="entry d-flex mb-4">
+                                        <div class="img-link me-4">
+                                            <img src="src/images/Korean Life/sport3.jpg" alt="Image">
+                                        </div>
+                                        <div>
+                                            <h2>Growth into a Sports Powerhouse</h2>
+                                            <p>The reason why South Korea has been able to become a global sporting
+                                                powerhouse is attributed to the people physically participating in a
+                                                range of sporting activities along with systematic investment. It
+                                                discovers talented young players and trains them scientifically, and
+                                                allows them to participate in diverse games to gain practical
+                                                experience. In addition, athletes who will participate in the Olympics
+                                                or the World Athletics Championships are intensively trained at the
+                                                separate athletic training center.
+
+                                                South Korea boasts highly methodical systems dedicated to sports
+                                                research. Specialists in various fields from sports dynamics to
+                                                psychology and physiology help athletes achieve their best possible
+                                                results in competitions. The Korea Institute of Sport Science (KISS) is
+                                                leading the scientific training of national athletes. KISS, formerly the
+                                                Sports Science Research Center, has incorporated science and technology
+                                                into training programs for various sports since its foundation. The
+                                                institute separately established the Research Department of Sports
+                                                Science composed of about 30 experts with the master's and doctorate
+                                                degrees for the purpose of assisting the athletes in winning medals
+                                                before participating in the 2016 Summer Olympics in Rio de Janeiro,
+                                                Brazil.
+
+                                                In 1966, the Korea National Training Center, also known as the Taereung
+                                                Training Center, was established in Seoul to foster national athletes.
+                                                It was dedicated to the promotion of Sports Science in South Korea,
+                                                consisting of training facilities including a track and field stadium
+                                                for different disciplines. It was the country's cradle of national
+                                                athletes for 51 years but demolished in 2017 when the Jincheon National
+                                                Training Center was completed in Jincheon, Chungcheongbuk-do,</p>
+                                        </div>
+                                    </div>
+                                    <div class="entry d-flex mb-4">
+                                        <div class="img-link me-4">
+                                            <img src="src/images/Korean Life/sport4.jpg" alt="Image">
+                                        </div>
+                                        <div>
+                                            <h2>Higher Status as a Host for International Competitions</h2>
+                                            <p>After liberation from Japanese colonization, Korean sports have made
+                                                extraordinary achievements. Particularly, since the 1976 Summer Olympics
+                                                (Games of the XXI Olympiad) and the 1984 Summer Olympics (Games of the
+                                                XXIII Olympiad), South Korea has ranked in the top ten, remaining as a
+                                                sporting powerhouse. It has hosted the world's top five mega sports, the
+                                                Summer Olympics, the Winter Olympics, The FIFA World Cup, the World
+                                                Athletics Championships, and the FINA World Championships, as well as
+                                                the Asian Games and the Universiade.
+
+                                                1988 Seoul Summer Olympics (Games of the XXIV Olympiad)
+
+                                                The 1988 Summer Olympics, officially known as the Games of the XXIV
+                                                Olympiad, were held in Seoul in 1988, marking a record number of
+                                                athletes ever: 13,304 athletes from 160 countries. With the slogan:
+                                                “Harmony and Progress,” the organizing committee set up the following
+                                                objectives: participation of the largest number of athletes, worldwide
+                                                harmony, best results, safety, and cost saving. South Korea became the
+                                                16th country (and only the 2nd in Asia) to host the Summer Olympic
+                                                Games. The competitions were held in 23 formal disciplines and 2
+                                                demonstration sports. South Korea ranked 4th overall, winning 12 gold
+                                                medals, 10 silver medals, and 11 bronze medals
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="entry d-flex mb-4">
+                                        <div class="img-link me-4">
+                                            <img src="src/images/Korean Life/sport5.jpg" alt="Image">
+                                        </div>
+                                        <div>
+                                            <h2>Professional Sports, a History Written in Sweat</h2>
+                                            <p>South Korea has professional leagues in sports: soccer, baseball,
+                                                basketball, volleyball, e-sports and Go (baduk). Korean professional
+                                                sports began to develop in 1982 when six professional baseball teams
+                                                were born. Subsequently, the Korean football league started in 1983,
+                                                followed by the professional basketball in 1997 and the professional
+                                                volleyball in 2005. At present, professional sports are actively
+                                                developed, centered on four professional sports leagues: football,
+                                                baseball, basketball, and volleyball.
+
+                                                The four professional sports also demonstrated high performances in
+                                                international competitions. The South Korea national football team
+                                                advanced to the semifinals at the 2002 FIFA World Cup Korea/Japan,
+                                                advanced to the round of 16 at the 2010 FIFA World Cup South Africa, and
+                                                won the bronze medal at the 2012 Summer Olympic Games in 2012. The South
+                                                Korean national baseball team won the gold medal in the final victory at
+                                                the 2008 Summer Olympics in Beijing Olympics in 2008, came in second in
+                                                the 2009 World Baseball Classic (WBC), and won the title in the WBSC
+                                                Premier12 in 2015. Based on these achievements, the people's interest in
+                                                South Korean professional sports has been steadily increasing.</p>
+                                        </div>
+                                    </div>
+                                    <div class="entry d-flex mb-4">
+                                        <div class="img-link me-4">
+                                            <img src="src/images/Korean Life/sport6.jpg" alt="Image">
+                                        </div>
+                                        <div>
+                                            <h2>Transforming into an Advanced Sports Country</h2>
+                                            <p>The government's 100 Policy Tasks presented in 2017 include Task 72: To
+                                                build a vibrant country where everyone can enjoy sports. The task is
+                                                intended to highlight the importance of sports for all as a means of
+                                                promoting life and welfare and building a healthy country, and to create
+                                                an environment in which all citizens are exposed to sports for all by
+                                                expanding public sports clubs and personalizing sports programs for each
+                                                life cycle.
+
+                                                Accordingly, local governments expanded their personalized sports
+                                                facilities as well as communities and amenities for the entire nation by
+                                                integrating sports for all with elite sports from 2012 to 2015. They
+                                                also developed sports-for-all programs tailored to the life cycles of
+                                                the local residents by investing profits earned through sports and
+                                                entertainment events in sports for all again. These efforts have
+                                                increased local residents' engagement in sport-for-all programs by a
+                                                factor of three. As a result, South Korea has successfully established a
+                                                virtuous cycle of sports and welfare.
+
+                                                In the 21st century, e-sports are rapidly spreading as attractive
+                                                cultural content. E-sports has been gradually recognized as official
+                                                sports since 2018 when it was adopted as a demonstration sport for the
+                                                18th Asian Games, also known as Jakarta Palembang 2018. South Korea is
+                                                the most advanced IT country in Asia due to the fastest digitalization
+                                                since the IT industry was promoted in 1998. Now, its e-sports industry
+                                                has also developed rapidly. Founded In 2001, the Korea e-Sports
+                                                Association (KeSPA) has systematized the athlete management, rules, and
+                                                competition methods, leading the popularization of e-sports. Currently,
+                                                South Korea has the largest number of world-class e-sports players and
+                                                is recognized as home to e-sports. The portion of South Korea in the
+                                                global e-sports industry is just 13.1%. However, it has world-class
+                                                players, so the potential of e-sports in South Korea is highly regarded
+                                                around the world.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-        <div id="History" class="container-fluid tab-pane fade">
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center">The history of South-Korea</h2>
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#history1">01</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history2">02</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history3">03</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history4">04</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history5">05</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history6">06</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history7">07</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#history8">08</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content border border-top-0">
+            </div> <!--end of the main body-->
 
-
-                        <div id="history1" class="container-fluid tab-pane active">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/Beginnings.jpg" alt="The Beginnings of Korea's History">
-                                </div>
-                                <div class="col-lg-6 ">
-                                    <h5 class="text-center pt-2">The Beginnings of Korea's History (Prehistoric
-                                        Times - Gojoseon)</h5>
-                                    <p>The history of the Korean nation began in Manchuria and the Korean
-                                        Peninsula when people started settling there 700,000 years ago.
-                                        Representative historic sites associated with the Paleolithic Age, when
-                                        people made tools of animal horns and chipped stone tools, include the
-                                        Komun Moru ruins in Sangwon, Pyeongannam-do, the Jeongok-ri Site in
-                                        Yeoncheon, <span id="collap1" class="collapse"> Gyeonggi-do, the
-                                            Seokjangri Prehistory Site in Gongju, Chungcheongnam-do, and the
-                                            Durubong Cave Site in Cheongju, Chungcheongbuk-do. The early
-                                            inhabitants of the peninsula survived by hunting animals and
-                                            collecting edible plants in groups.<br>
-                                            In Korea, the Neolithic Age began around 8,000 BCE. People started
-                                            farming, cultivating cereals such as millet, and used polished stone
-                                            tools. They started settling down permanently in places and formed
-                                            clan societies. One of the most representative features of the
-                                            Neolithic Age is comb-patterned pottery, examples of which have been
-                                            found all across the Korean Peninsula, including in Amsadong, Seoul,
-                                            in Namgyeong, Pyongyang, and in Suga-ri, Gimhae. The Bronze Age
-                                            started around the 10th century BCE on the Korean Peninsula and the
-                                            15th century BCE in Manchuria. Historic sites associated with the
-                                            Bronze Age are found in Liaoning and Jilin provinces, China and
-                                            across the Korean Peninsula. With the development of the Bronze Age
-                                            culture, a society emerged in which the head of a clan exercised
-                                            great influence. The strongest clan leaders started merging many
-                                            clans into one, and these groups very gradually developed into early
-                                            states.<br>
-                                            The tribes that played a central role in the establishment of
-                                            Gojoseon, which emerged as the first recognizable state of the
-                                            Korean people, believed in the King of Heaven and worshipped bears,
-                                            respectively. The two factions jointly upheld Dangun Wanggeom as
-                                            their chief priest and political leader. Gojoseon fostered an
-                                            independent culture in Liaoning, China and along the Daedonggang
-                                            River. By the 3rd century BCE, kings such as King Bu and King Jun
-                                            had become powerful and bequeathed the throne to their sons. They
-                                            established a solid system of rule, backed by high-ranking retainers
-                                            and military officers.<br>
-                                            Towards the end of the 3rd century, the Qin dynasty was replaced by
-                                            the Han dynasty in China, creating a period of social upheaval. Many
-                                            people moved southward to Gojoseon. Their leader, Wiman, acceded to
-                                            the throne in 194 BCE and Gojoseon expanded its territory under his
-                                            rule. By this time, Gojoseon had adopted Iron Age culture, developed
-                                            agriculture and various handicrafts, and increased its military
-                                            strength. It tried to monopolize profits, while serving as an
-                                            intermediate in the trade between the Korean Peninsula and China,
-                                            taking advantage of its geographical proximity to China. This led to
-                                            confrontation between Gojoseon and the Han dynasty. Han attacked
-                                            Gojoseon with a large number of ground and naval forces. Gojoseon
-                                            defiantly resisted the attack and won a great victory in the early
-                                            stage of the war, but its capital at Wanggeomseong Fortress fell
-                                            after a year of war, and Gojoseon collapsed in 108 BCE.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap1">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="history2" class="container-fluid tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/threekingdons.jpg" alt="Three Kingdoms and Other States">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h5 class="text-center pt-2">Three Kingdoms and Other States</h5>
-                                    <p>Towards the end of the Gojoseon Period, tribal states came into being one
-                                        after another in Manchuria and on the Korean Peninsula. Buyeo was
-                                        established in the plains along the Songhua River in Manchuria and
-                                        Jilin. The people of Buyeo grew crops and raised livestock, including
-                                        horses. They also made furs. By the early 1st century CE, they started
-                                        <span id="collap2" class="collapse"> calling their main leader the King
-                                            and actively engaged with other countries, even entering into
-                                            diplomatic relations with China. By the end of the 3rd century,
-                                            Buyeo had been incorporated into Goguryeo. The people of Buyeo held
-                                            an annual festival called Yeonggo in December. During the festival,
-                                            they held a sacrificial rite for heaven, sang and danced together,
-                                            and released prisoners.<br>
-                                            Buyeo fell apart during the establishment of the regional
-                                            confederation, but the factions that founded Goguryeo and Baekje
-                                            took pride in their status as the inheritors of Buyeo. Samguk sagi
-                                            (History of the Three Kingdoms) states that Gojumong, who founded
-                                            Goguryeo in 37 BCE, was originally from Buyeo. Goguryeo prospered
-                                            greatly through victorious wars in areas close to Baekdusan Mountain
-                                            and along the Amnokgang (Yalu) River. Right after its foundation,
-                                            Goguryeo conquered a number of small states in the area and moved
-                                            its capital to Gungnaeseong (Tonggu) near the Amnokgang River.
-                                            Through many wars, it drove away the factions loyal to the Han
-                                            dynasty and expanded its territory as far as Liaodong in the west
-                                            and to the northeast of the Korean Peninsula. It became a powerful
-                                            state, exerting control over Manchuria and the northern part of the
-                                            Korean Peninsula.<br>
-                                            There were also a number of small states, such as Okjeo and Dongye,
-                                            in present-day Hamgyeong-do and the northern parts of Gangwon-do
-                                            along the east coast of the Korean Peninsula. Located in outlying
-                                            areas, they did not develop very rapidly. Okjeo offered tributes
-                                            such as salt and fish to Goguryeo. Dongye held a sacrificial rite
-                                            for heaven called Mucheon in October to build a spirit of
-                                            collaboration by singing and dancing together. Its specialties
-                                            included dangung (an archery bow) and gwahama (a horse small enough
-                                            to pass unhindered beneath fruit trees). These two states were also
-                                            incorporated into Goguryeo.<br>
-                                            The area south of Gojoseon was occupied by a large group of small
-                                            states including Mahan, Jinhan, and Byeonhan. Mahan was a
-                                            confederacy of fifty-four small states (composed of 100,000
-                                            households in total) located in present-day Gyeonggi-do,
-                                            Chungcheong-do, and Jeolla-do. Byeonhan was located in presentday
-                                            Gimhae and Masan while Jinhan located in present-day Daegu and
-                                            Gyeongju. Each of the latter two was composed of 40,000-50,000
-                                            households. The three mini-states were collectively known as Samhan
-                                            (Three Han States). The people of Samhan held rites of sacrifice for
-                                            heaven in May and October. On such occasions, they gathered together
-                                            to enjoy liquor, food, singing and dancing.<br>
-                                            Along with the spread of Iron Age culture and the development of
-                                            farming skills, powerful states such as Goguryeo, Baekje and Silla
-                                            gradually were established in Manchuria and on the Korean
-                                            Peninsula.<br>
-                                            Goguryeo was the first of the three Kingdoms to firmly establish
-                                            itself as a sovereign country. It started expanding its territory in
-                                            the late 1st century and strengthened a king-centered ruling system
-                                            by the late 2nd century. By the early 4th century, King Micheon of
-                                            Goguryeo had driven away factions loyal to the Han dynasty from the
-                                            Korean Peninsula.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap2">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="history3" class="container-fluid tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/northernandsouthern.jpg"
-                                        alt="Northern and Southern States Period">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h5 class="text-center pt-2">Northern and Southern States Period: Unified
-                                        Silla and Balhae</h5>
-                                    <p>With the unification of the three Kingdoms on the Korean Peninsula in
-                                        668, Silla enjoyed a marked expansion of both its territory and
-                                        population. Unified Silla entered a period of dazzling economic
-                                        development. It mended fences with Tang China. The two countries saw
-                                        vigorous exchanges between traders, monks, and Confucian scholars. Silla
-                                        exported <span id="collap3" class="collapse"> gold and silver handiworks
-                                            and ginseng to Tang and imported books, ceramic ware, satin silk
-                                            fabric, clothes, and craftwork products. Goods from Central Asia
-                                            were introduced to Silla, and traders from that region paid visits
-                                            to Silla via the Silk Road and sea routes.<br>
-                                            The major ports of Silla included Ulsan and Danghangseong
-                                            (present-day Hwaseong, Gyeonggi-do), through which numerous goods
-                                            from Central and Southern Asia were imported. In the early 9th
-                                            century, General Jang Bo-go of Silla established a forward base in
-                                            Cheonghaejin (present-day Wando, Jeollanamdo) to deal with the
-                                            pirate menace and encourage trade with nearby countries including
-                                            China and Japan.<br>
-                                            In the meantime, the survivors of the fallen Kingdom of Goguryeo
-                                            resisted Tang China's rule. In 698, a group of them led by Dae
-                                            Jo-yeong, jointly with the Mohe, founded Balhae near present-day
-                                            Dongmiaoshan in Jilin province, China. The new Kingdom would
-                                            eventually confront Silla in the south.<br>
-                                            Balhae started expanding its territory and regained control over
-                                            most of the former territory of Goguryeo. During the reign of King
-                                            Mu, Balhae controlled the northern parts of Manchuria. King Mun
-                                            reformed the system of governance and moved the capital to
-                                            Sanggyeong (present-day Ningan-xian, Heilongjiang province) in about
-                                            755. The people of Balhae took pride in their Goguryeo inheritance.
-                                            Letters held in Japan show that the kings of Balhae referred to
-                                            themselves as the Kings of Goguryeo. Balhae eventually grew so large
-                                            and strong that the people of Tang China called it Haedong Seongguk
-                                            (“prosperous country in the east”), but it fell in 926 as a result
-                                            of an eruption of Baekdusan Mountain and an invasion of the Khitan
-                                            people.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap3">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="history4" class="container-fluid tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/Goryeo.jpg" alt="Goryeo Dynasty">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h5 class="text-center pt-2">Goryeo Dynasty</h5>
-                                    <p>By the late 8th century, Silla had been weakened by an internal struggle
-                                        for power among the nobility; by the 10th century, leaders of powerful
-                                        local factions, such as Gyeon Hwon and Gungye, had established their own
-                                        regimes. In 892, Gyeon Hwon established a Kingdom named Later Baekje,
-                                        with Wansanju as its capital, and gained control of present-day <span
-                                            id="collap4" class="collapse"> Jeolla-do and Chungcheong-do.<br>
-                                            In 901, Gungye, a member of the Silla royal family, founded Later
-                                            Goguryeo in Songak (present-day Gaeseong), exerting control over
-                                            present-day Gangwon-do and Gyeonggi-do. He expanded the territory,
-                                            reformed the ruling system, and relocated the capital to Cheorwon.
-                                            He also changed the name of the country to Taebong.<br>
-                                            Gungye lost the support of his people while exerting control over
-                                            local leaders and strengthening his claim to the throne. In 918, he
-                                            was driven away by Wang Geon, a local leader from Songak. Wang Geon
-                                            changed the name of the country to Goryeo, announced that the
-                                            country would inherit Goguryeo, and moved the capital to Songak.
-                                            Goryeo remained hostile to Later Baekje while actively promoting a
-                                            policy of engaging Silla. In 935, Unified Silla was peacefully
-                                            incorporated into Goryeo. Following a power struggle among leaders
-                                            in Later Baekje, Gyeon Hwon surrendered to Wang Geon. In 936, Later
-                                            Baekje fell to Goryeo. Thus, Wang Geon unified the Later Three
-                                            Kingdoms on the Korean Peninsula.<br>
-                                            Goryeo adopted Confucianism as its political ideology and
-                                            established an effective education system by founding the Gukjagam
-                                            (a national higher education institution) and numerous hyanggyo
-                                            (local private schools). Buddhism also exerted considerable
-                                            influence over Goryeo society in general. The Kingdom adopted a more
-                                            tolerant approach towards the acceptance of other religions, as
-                                            indicated by the rites called Yeondeunghoe (Lotus Lantern Festival)
-                                            and Palgwanhoe (Festival of the Eight Vows), in which prayers were
-                                            offered for blessing, based on a syncretic mix of folk religions and
-                                            Buddhism.<br>
-                                            Goryeo engaged in brisk trade with many countries, including the
-                                            Song dynasty. Many traders from Song, Central Asia, Arabia,
-                                            Southeast Asia and Japan travelled to Byeongnando, a gateway to the
-                                            capital, Gaeseong. Traders from Song sold satin, silk and medicinal
-                                            herbs, while traders from Goryeo sold hemp cloth and ginseng. Gems
-                                            such as ivory, crystal, amber were imported from Arabia. Finally,
-                                            the name Korea originated from Goryeo during this period.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap4">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="history5" class="container-fluid tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/Joseon.jpg" alt="Joseon Dynasty">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h5 class="text-center pt-2">Joseon Dynasty</h5>
-                                    <p>Towards the end of the 14th century, Goryeo found itself in a difficult
-                                        situation due to internal and external problems, including a struggle
-                                        for power among the nobility and incursions by red-turbaned bandits and
-                                        Wako pirates. At that time, General Yi Seong-gye had become popular
-                                        among the people for his role in driving away foreign invaders. <span
-                                            id="collap5" class="collapse"> He overthrew the Goryeo dynasty and
-                                            founded a new dynasty, Joseon. As the first King Taejo of Joseon, he
-                                            chose Hanyang (present day Seoul) – judged to be a propitious spot
-                                            according to the principles of feng shui – as the capital of the new
-                                            dynasty. He also ordered the construction of Gyeongbokgung Palace
-                                            and the Jongmyo shrine, as well as roads and markets. The new
-                                            capital, located in the center of the Korean Peninsula, was easily
-                                            accessible via the Hangang River, which flowed directly through its
-                                            heart.<br>
-                                            King Taejong, the third king and son of the founder of the dynasty,
-                                            made a significant contribution to stabilizing the centralized
-                                            system of governance. He adopted a system under the law of hopae
-                                            (identification tags) to figure out the population, and launched the
-                                            major executive bodies called the Six Ministries of Joseon:
-                                            Personnel (Ijo), Taxation (Hojo), Rites (Yejo), Military Affairs
-                                            (Byeongjo), Punishments (Hyeongjo), and Public Works (Gongjo), all
-                                            of which had to report directly to their king. King Sejong, the
-                                            fourth king and a son of King Taejong, ushered in an era of great
-                                            political, social, and cultural prosperity. Scholars at the
-                                            Jiphyeonjeon (Hall of Worthies) developed strong and effective
-                                            policies. During the reigns of Sejo, Yejong, and Seongjong, the
-                                            Gyeongguk daejeon (National Code) was drawn up with the aim of
-                                            establishing a long-lasting ruling system.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap5">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="history6" class="container-fluid tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/fallofJoseon.jpg" alt="The Fall of Joseon">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h5 class="text-center pt-2">The Fall of Joseon: Imperial Japan's Annexation
-                                        of Korea</h5>
-                                    <p>With the onset of the Industrial Revolution in the 18th century,
-                                        capitalism developed in Europe and large businesses came into being.
-                                        European countries expanded their colonies in Asia and Africa. By the
-                                        mid-19th century, the western powers had forced the Qing dynasty of
-                                        China and Japan to open their doors and then asked the same of Joseon,
-                                        but <span id="collap6" class="collapse"> Joseon duly rejected such
-                                            requests. Joseon did not yield to pressure applied in the form of
-                                            naval attacks in 1866 (by the French) and 1871 (by the
-                                            Americans).<br>
-                                            In the ensuing period, the pressure did not stop. In 1875, Japan
-                                            dispatched the battleship Unyo Maru to attack Ganghwado and
-                                            Yeongjongdo Islands, demanding that Joseon open its doors to foreign
-                                            trade missions. Ultimately, Joseon was forced to sign the highly
-                                            unequal, one-sided Korean-Japanese Treaty, or Ganghwa Treaty (1876)
-                                            with Japan in 1876 under military threat.<br>
-                                            Subsequently, imperialist powers, including Japan, vied with each
-                                            other to pillage Joseon’s resources. In 1897, Joseon changed its
-                                            name to the Korean Empire (Daehan Jeguk) and pushed ahead with
-                                            reforms and an open-door policy, but it was too late. Japan soon won
-                                            major victories in its wars against the Qing dynasty and Russia,
-                                            emerged as a strong power in Northeast Asia, and took steps to annex
-                                            Joseon. Many Korean patriots, including Ahn Jung-geun, resisted such
-                                            a plan, but to no avail. In August 1910, the Korean Empire was
-                                            formally annexed by the Empire of Japan.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap6">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="history7" class="container-fluid tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/Independence.jpg" alt="Independence Movement">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h5 class="text-center pt-2">Independence Movement</h5>
-                                    <p>During the colonial period, the Japanese pillaged Joseon's resources,
-                                        banned the use of the Korean language-even going so far in 1939 as to
-                                        require Koreans to change their personal names to Japanese style
-                                        surnames and given names under the Name Order, and conscripted Koreans
-                                        into their work force or as uniformed soldiers in the Pacific War. <span
-                                            id="collap7" class="collapse"> Koreans engaged in persistent
-                                            struggles to regain their independence. They organized numerous
-                                            clandestine organizations to fight the Japanese within the country
-                                            such as Joseon National Sovereignty Restoration Group and The Korea
-                                            Liberation Corps. They also established forward bases for the
-                                            independence movement in China, Russia, and the United States and
-                                            led unprecedentedly peaceful demonstrations. In March 1919, Korean
-                                            leaders announced the Declaration of Independence. Students and
-                                            ordinary people staged street demonstrations across the country
-                                            shouting their motto, “Long Live Korean Independence!” The movement
-                                            spread to the Koreans resisting in Manchuria, the Maritime Provinces
-                                            of Siberia, the United States, Europe, and even to Japan. Following
-                                            the March 1st Movement, organizations representing Koreans were
-                                            established in Seoul, the Maritime Province of Siberia, and
-                                            Shanghai. Of these, the Provisional Government of the Republic of
-                                            Korea, which was established in Shanghai, China, is the country’s
-                                            first democratic republican government; it was equipped with a
-                                            modern Constitution and a political system that separated the three
-                                            basic branches (executive, legislature and judicial) of
-                                            government.<br>
-                                            Koreans also carried out armed struggles against the Japanese. In
-                                            the 1920s, more than 30 Korean independence army units engaged in
-                                            resistance activities in Manchuria and the Maritime Provinces of
-                                            Siberia. For example, in June 1920, the Battle of Fengwudong was a
-                                            battle that occurred in Fengwutung, Jilin province, China between
-                                            Japanese forces and Korean independence militias led by Hong Beom-do
-                                            to a big victory. Another is the Battle of Qingshanli, which was
-                                            fought over six days in October 1920 between the Imperial Japanese
-                                            Army and the Northern Military Administration Office Army led by Kim
-                                            Jwa-jin along with other Korean armed groups. They won a great
-                                            victory against Japanese troops in Helongxian, Manchuria.<br>
-                                            In 1940, the Provisional Government of the Republic of Korea (PGK)
-                                            organized the Korean Liberation Army in Chungqing, integrating many
-                                            scattered volunteer independence armies and militias in Manchuria.
-                                            The PGK declared war against Japan and dispatched troops to the
-                                            front lines in India and Myanmar to fight on the side of the Allied
-                                            Forces. Some young Koreans received special training from a special
-                                            military unit of the United States to better equip themselves to
-                                            attack Japanese forces in Korea. On August 15, 1945, Koreans finally
-                                            received what they had looked forward to for so long: the country's
-                                            liberation as a result of Japan's surrender in the Pacific War. U.S.
-                                            and Soviet troops were deployed to the south and north of the 38th
-                                            parallel, respectively to disarm Japanese troops remaining on the
-                                            Korean Peninsula.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap7">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="history8" class="container-fluid tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <img id="image" class="rounded d-block mx-auto img-fluid"
-                                        src="src/images/Democracy.jpg" alt="Transition to a Democracy">
-                                </div>
-                                <div class="col-lg-6">
-                                    <h5 class="text-center pt-2">Transition to a Democracy and Transformation
-                                        into an Economic Powerhouse</h5>
-                                    <p>On May 10, 1948, the first general election was held in a democratic
-                                        manner in South Korea under the UN’s supervision to elect the 198
-                                        members of the National Assembly. In July of the same year, the
-                                        Constitution was enacted and Rhee Syngman and Yi Si-yeong, two
-                                        independence fighters deeply respected by Koreans, were elected as the
-                                        country's <span id="collap8" class="collapse"> first President and Vice
-                                            President, respectively. On August 15, 1948, the Republic of Korea
-                                            (ROK) was formally established as a liberal democracy, which
-                                            inherited the legitimacy of the PGK. The UN recognized the
-                                            government of the ROK as the only legitimate government on the
-                                            Korean Peninsula.<br>
-                                            However, to the north of the 38th parallel, a general election under
-                                            UN supervision could not be carried out due to the Soviet Union’s
-                                            opposition. On September 9, 1948, the Democratic People’s Republic
-                                            of Korea (DPRK) was proclaimed as a communist country, and Kim
-                                            Il-sung, who had served as an officer of the Soviet Russian Army,
-                                            was sworn in as the President. Amid the confrontation between a free
-                                            democracy in the south and a communist dictatorship in the north,
-                                            the ROK government led by President Rhee Syngman was burdened with
-                                            many issues such as establishing domestic order, eliminating
-                                            vestiges of Japanese imperialism, and overcoming ideological
-                                            confrontations between the left and the right.<br>
-                                            On June 25, 1950, North Korean troops armed with Soviet-made tanks
-                                            and fighters invaded the South, thus triggering an all-out war. The
-                                            UN Security Council unanimously condemned the North Korean invasion
-                                            and published a resolution recommending that its member states
-                                            provide military assistance to South Korea. When the tide of the war
-                                            turned against the North with the intervention of the UN Forces, the
-                                            Chinese Red Army intervened in the war on the North’s side. The two
-                                            sides engaged in fierce battles until, on July 27, 1953, the two
-                                            sides finally signed the armistice agreement. President Rhee Syngman
-                                            did not sign the agreement, calling strongly for the prolongation of
-                                            the war with the goal of unifying the entire country in the South's
-                                            favor.</span>
-                                        <a class="btn" data-bs-toggle="collapse" data-bs-target="#collap8">Collapse...
-                                            &raquo;</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
+            <div class="footer container-fluid bg-dark text-white text-center py-2"><!--footer-->
+                <div class="row">
+                    <div class="col">Douglas, Rajal and Rodrigo</div>
+                    <div class="col">Responsive Web Design</div>
+                    <div class="col">16 Dec 2022</div>
                 </div>
             </div>
-        </div>
-        <div id="Demography" class="container-fluid tab-pane fade">
-            <p>Demography</p>
-        </div>
-        <div id="Culture" class="container-fluid tab-pane fade">
-            <p>Culture</p>
-        </div>
-        <div id="Economy" class="container-fluid tab-pane fade">
-            <p>Economy</p>
-        </div>
-        <div id="Education" class="container-fluid tab-pane fade">
-            <p>Education</p>
-        </div>
-        <div id="Sports" class="container-fluid tab-pane fade">
-            <p>Sports</p>
-        </div>
-    </div><!--end of the main body-->
 
-    <div class="footer container-fluid bg-dark text-white text-center py-2"><!--footer-->
-        <div class="row">
-            <div class="col">Douglas, Rajal and Rodrigo</div>
-            <div class="col">Responsive Web Design</div>
-            <div class="col">16 Dec 2022</div>
-        </div>
-    </div>
-    </div>
-    </div>
+        </div> <!--end of the row container fluid-->
+    </div> <!--end of the container fluid-->
 </body>
 
 </html>
