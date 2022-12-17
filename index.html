@@ -20,6 +20,9 @@
              .footer {
                 font-size: 0.7em;
              }
+             h1.heading {
+                font-size: 3.55em;
+            }
         }
         @media (min-width: 576px) {
             .footer {
@@ -28,18 +31,41 @@
              .textCard {
             min-height: 97px;
             }         
+            h1.heading {
+                font-size: 3.05em;
+            }
+        }
+        @media (min-width: 769px) {
+            
+            .card-text {
+                min-height: 250px;
+            }
+
+             .textCard {
+            min-height: 97px;
+            }         
+
         }
         @media (min-width: 992px) {
             .footer {
                 font-size: 1.5em;
              }
-                         
+             h1.heading {
+                font-size: 3.25em;
+                margin: 0 0 0.3em;
+            }
+            .card-text {
+                min-height: 375px;
+            }          
         }    
         @media (min-width: 1200px) {
             .textCard {
             min-height: 144px;
             }            
         }
+
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
         #more {display: none;}  
         #map {
             max-height: 350px;
@@ -56,13 +82,26 @@
         .card {
             background-color: #fff;
             border-radius: 2px;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);            
             transition: box-shadow .25s;
         }
         .card:hover {
             box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        
+        .date {
+            font-family: "Work Sans", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            overflow-x: hidden;
+            color: #7b8388;
+            position: relative;
+        }
+
+        .list-title {
+            text-transform: capitalize;
+            font-weight: bold;
+
+        }        
 
     </style>
 </head>
@@ -87,7 +126,7 @@
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#History">History</a></li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Culture">Culture</a></li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Economy">Economy</a></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Education">Education</a></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#KoreanLife">Korean Life</a></li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Sports">Sports</a></li>                   
                         </ul>    
                     </div>
@@ -99,7 +138,7 @@
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#History">History</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Culture">Culture</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Economy">Economy</a></li>
-                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#KoreanLife">Korean Life</a></li>
                     <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#Sports">Sports</a></li>
                 </ul>
             </div>
@@ -382,7 +421,7 @@
                                 <img src="src/images/cuisine.jpg" class="card-img-top" alt="soybean paste stew">
                                 <div class="card-body">
                                     <h5 class="card-title">Cuisine</h5>
-                                    <p class="card-text">Since ancient times, the Korean people have believed that food
+                                    <p class="textCard">Since ancient times, the Korean people have believed that food
                                         and medicine share the same origin and hence perform the same function,
                                         following...</p>
                                     <a href="#Cuisine" class="btn btn-primary">Learn more</a>
@@ -394,7 +433,7 @@
                                 <img src="src/images/arts.jpg" class="card-img-top" alt="traditional art">
                                 <div class="card-body">
                                     <h5 class="card-title">Traditional Arts</h5>
-                                    <p class="card-text">Performance of Yeomillak (“Joy of the People”) court music
+                                    <p class="textCard">Performance of Yeomillak (“Joy of the People”) court music
                                         composed during the reign of King Sejong in the 15th century Gugak The term
                                         gugak...</p>
                                     <a href="#TraditionalArts" class="btn btn-primary">Learn more</a>
@@ -406,7 +445,7 @@
                                 <img src="src/images/crafts.jpg" class="card-img-top" alt="two-tier chest">
                                 <div class="card-body">
                                     <h5 class="card-title">Crafts</h5>
-                                    <p class="card-text">Korean remains of ancient kilns can be seen in Gangjin, the
+                                    <p class="textCard">Korean remains of ancient kilns can be seen in Gangjin, the
                                         largest production site of celadon during the Goryeo period....</p>
                                     <a href="#Crafts" class="btn btn-primary">Learn more</a>
                                 </div>
@@ -417,7 +456,7 @@
                                 <img src="src/images/dance.png" class="card-img-top" alt="fan dance">
                                 <div class="card-body">
                                     <h5 class="card-title">Folk Dance</h5>
-                                    <p class="card-text">A traditional form of Korean dance usually performed by groups
+                                    <p class="textCard">A traditional form of Korean dance usually performed by groups
                                         of female dancers and The term gugak, which literally means “national music,”...
                                     </p>
                                     <a href="#FolkDance" class="btn btn-primary">Learn more</a>
@@ -429,7 +468,7 @@
                                 <img src="src/images/unesco.jpg" class="card-img-top" alt="unesco heritage">
                                 <div class="card-body">
                                     <h5 class="card-title">UNESCO Heritage in Korea</h5>
-                                    <p class="card-text">Korea’s vibrant cultural legacy, comprising music, art,
+                                    <p class="textCard">Korea’s vibrant cultural legacy, comprising music, art,
                                         literature, dance, architecture, clothing, and cuisine, offers a delightful
                                         combination of tra...</p>
                                     <a href="#UnescoHeritage" class="btn btn-primary">Learn more</a>
@@ -441,7 +480,7 @@
                                 <img src="src/images/nature.jpg" class="card-img-top" alt="jirisan national park">
                                 <div class="card-body">
                                     <h5 class="card-title">Nature and Its Healing Power</h5>
-                                    <p class="card-text">Spring scenery in the Jirisan National Park National Parks
+                                    <p class="textCard">Spring scenery in the Jirisan National Park National Parks
                                         South Korea has designated and operated national parks to preserve the
                                         natural...</p>
                                     <a href="#Nature" class="btn btn-primary">Learn more</a>
@@ -453,7 +492,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5>National Holidays</h5>
-                                    <p class="card-text">In South Korea, there are five national holidays designated by
+                                    <p class="textCard">In South Korea, there are five national holidays designated by
                                         the government. First, March 1st Movement Day commemorates the Korean
                                         independence movement, which was held by the public on March 1, 1919 to show
                                         resistence against the Japanese occupation of Korea. Second, Constitution Day or
@@ -467,7 +506,7 @@
                                         on October 9th, is to commemorate the invention and proclamation of the Korean
                                         writing system.</p>
                                     <h5>Public Holidays</h5>
-                                    <p class="card-text">The public holidays during which work is suspended by law in
+                                    <p class="textCard">The public holidays during which work is suspended by law in
                                         South Korea include New Year’s Day, Seollal (or Lunar New Year’s Day, celebrated
                                         for 3 days), Chuseok (Mid-autumn Festival on the 15th day of the 8th lunar
                                         month, celebrated for 3 days), Buddha’s Birthday (on the 8th day of the 4th
@@ -479,7 +518,7 @@
                                             style="width: 537px;" alt="...">
                                     </div>
                                     <h5>Time Zones</h5>
-                                    <p class="card-text">Korea Standard Time (KST) is 9 hours ahead of Coordinated
+                                    <p class="textCard">Korea Standard Time (KST) is 9 hours ahead of Coordinated
                                         Universal Time(UTC). UTC offsets: (UTC +9)</p>
 
                                 </div>
@@ -490,13 +529,13 @@
                             <div class="card mb-2">
                                 <div class="card-body">
                                     <h5>National Animal</h5>
-                                    <p class="card-text">The National animal of South Korea is Siberian tiger.</p>
+                                    <p class="textCard">The National animal of South Korea is Siberian tiger.</p>
                                     <div class="text-center">
                                         <img src="src/images/Siberian-tiger.jpg" class="card-img-top img-fluid"
                                             style="width: 400px;" alt="siberian tiger">
                                     </div>
                                     <h5>National Flower</h5>
-                                    <p class="card-text">The National flower of South Korea is Rose of Sharon. Botanical
+                                    <p class="textCard">The National flower of South Korea is Rose of Sharon. Botanical
                                         name is Hibiscus syriacus.</p>
                                     <div class="text-center">
                                         <img src="src/images/Rose-of-Sharon.jpg" class="card-img-top img-fluid"
@@ -521,7 +560,7 @@
                                                 style="width: 800px;" alt="soybean paste stew">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">Since ancient times, the Korean people have believed
+                                            <p class="textCard">Since ancient times, the Korean people have believed
                                                 that food
                                                 and medicine share the same origin and hence perform the same function,
                                                 following the adage that “food is the best medicine.” They believe that
@@ -534,7 +573,7 @@
                                                 failed.
                                             </p>
                                             <h5 class="card-title">Traditional Fermentation of Food</h5>
-                                            <p class="card-text">One of the key words to understanding traditional
+                                            <p class="textCard">One of the key words to understanding traditional
                                                 Korean food
                                                 is fermentation, a metabolic process that helps food to “mature” so that
                                                 it can
@@ -547,7 +586,7 @@
                                                 several years.
                                             </p>
                                             <h5 class="card-title">Doenjang (Soybean Paste) and Ganjang (Soy Sauce)</h5>
-                                            <p class="card-text">Two of the most important items of traditional
+                                            <p class="textCard">Two of the most important items of traditional
                                                 fermented food
                                                 in Korea are doenjang and ganjang. To make them, it is necessary to soak
                                                 soybeans in water and boil them until fully cooked. Then, they must be
@@ -581,7 +620,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Jangdokdae (Soy Jar Terrace)</h5>
-                                            <p class="card-text">An area outside the kitchen used to store large
+                                            <p class="textCard">An area outside the kitchen used to store large
                                                 brown-glazed
                                                 pottery jars containing soy paste, soy sauce, and chili paste. Korean
                                                 pottery
@@ -602,7 +641,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Saeujeot (Salted Shrimp)</h5>
-                                            <p class="card-text">One of the two most popular fish sauces in Korea, the
+                                            <p class="textCard">One of the two most popular fish sauces in Korea, the
                                                 other
                                                 being anchovy sauce, this shrimp sauce made by fermenting salted shrimps
                                                 is used
@@ -620,7 +659,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Bibimbap</h5>
-                                            <p class="card-text">Bibimbap (literally “mixed rice”) is a Korean rice dish
+                                            <p class="textCard">Bibimbap (literally “mixed rice”) is a Korean rice dish
                                                 served after mixing it with an assortment of fresh and seasonal
                                                 vegetables, fried egg, minced beef, and other ingredients. It is also
                                                 served in a sizzling hot stone bowl, which is called dolsotbibimbap (Hot
@@ -628,7 +667,7 @@
                                                 UNESCO-designated Creative City of Gastronomy, where food festivals such
                                                 as the Bibimbap Festival are held every autumn, thereby attracting
                                                 gastronomes from across South Korea and beyond.</p>
-                                            <p class="card-text">Bibimbap, along with kimchi and bulgogi, is considered
+                                            <p class="textCard">Bibimbap, along with kimchi and bulgogi, is considered
                                                 one of the three representative dishes of Korean cuisine. It is getting
                                                 more preferred as an airline meal, and more efforts have been put into
                                                 the development of different bibimbap products to popularize Korean
@@ -649,7 +688,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Gugak</h5>
-                                            <p class="card-text">The term gugak, which literally means “national music,”
+                                            <p class="textCard">The term gugak, which literally means “national music,”
                                                 refers to traditional Korean music and other related art forms including
                                                 songs, dances, and ceremonial movements. The history of music in Korea
                                                 should be as long as Korean history itself, but it was only in the early
@@ -665,7 +704,7 @@
                                                 Yeomillak, or “Joy of the People.” The term gugak was first used by the
                                                 Jangagwon, a government agency of late Joseon responsible for music, to
                                                 distinguish traditional Korean music from foreign music.</p>
-                                            <p class="card-text">Traditional Korean music is typically classified into
+                                            <p class="textCard">Traditional Korean music is typically classified into
                                                 several types: the “legitimate music” (called jeongak or jeongga)
                                                 enjoyed by the royalty and aristocracy of Joseon; folk music including
                                                 pansori, sanjo, and japga; jeongjae (court music and dance) performed
@@ -677,7 +716,7 @@
                                                 particularly cherished by the common people and there exist many
                                                 variations with special lyrics and melodies unique to each region such
                                                 as Miryang, Jeongseon, and Jindo.</p>
-                                            <p class="card-text">Gugak instruments are similarly diverse. These
+                                            <p class="textCard">Gugak instruments are similarly diverse. These
                                                 traditional musical instruments are generally divided into three
                                                 categories: wind instruments such as the piri, daegeum, danso, and
                                                 taepyeongso; stringed instruments such as the gayageum, geomungo,
@@ -699,7 +738,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Pottery</h5>
-                                            <p class="card-text">Korean pottery, which nowadays attracts the highest
+                                            <p class="textCard">Korean pottery, which nowadays attracts the highest
                                                 praise from international collectors, is typically divided into three
                                                 groups: Cheongja (blue-green celadon), Buncheong (slip-coated
                                                 stoneware), and Baekja (white porcelain). Celadon refers to Korean
@@ -721,7 +760,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Handmade Paper Doll</h5>
-                                            <p class="card-text">Korean mulberry paper dolls made of hanji is Korean
+                                            <p class="textCard">Korean mulberry paper dolls made of hanji is Korean
                                                 traditional handmade paper</p>
                                         </div>
                                     </div>
@@ -739,7 +778,7 @@
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title">Folk Dance</h5>
-                                            <p class="card-text">Korean people have inherited a great variety of folk
+                                            <p class="textCard">Korean people have inherited a great variety of folk
                                                 dances such as salpurichum (spiritual purification dance), gutchum
                                                 (shamanic ritual dance), taepyeongmu (dance of peace), hallyangchum
                                                 (idler’s dance), buchaechum (fan dance), geommu (sword dance), and
@@ -765,13 +804,13 @@
                                                 style="width: 700px;" alt="gyeongju historic place">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">Korea’s vibrant cultural legacy, comprising music, art,
+                                            <p class="textCard">Korea’s vibrant cultural legacy, comprising music, art,
                                                 literature, dance, architecture, clothing, and cuisine, offers a
                                                 delightful combination of tradition and modernity. South Korea preserves
                                                 a wealth of priceless cultural heritage, the majority of which have been
                                                 inscribed on UNESCO’s World Heritage List to be protected for future
                                                 generations.</p>
-                                            <p class="card-text">Since the earliest settlements during prehistoric
+                                            <p class="textCard">Since the earliest settlements during prehistoric
                                                 times, the people of Korea have developed a unique culture based on
                                                 their outstanding artistic sensibility. The geographical conditions of
                                                 the peninsula provided Koreans with opportunities to receive both
@@ -780,14 +819,14 @@
                                                 both then and now. Korea’s vibrant cultural legacy, comprising music,
                                                 art, literature, dance, architecture, clothing, and cuisine, offers a
                                                 delightful combination of tradition and modernity.</p>
-                                            <p class="card-text">At the present time, Korean arts and culture are
+                                            <p class="textCard">At the present time, Korean arts and culture are
                                                 attracting many enthusiasts around the world. Korea’s cultural and
                                                 artistic achievements through the ages are now leading many of its young
                                                 talents to the world’s most prestigious music and dance competitions,
                                                 while its literary works are being translated into many different
                                                 languages for global readers. Recently, Korean Dansaekhwa (monochrome
                                                 paintings) have become the talk of the global art world.</p>
-                                            <p class="card-text">South Korea preserves a wealth of priceless cultural
+                                            <p class="textCard">South Korea preserves a wealth of priceless cultural
                                                 heritage, the majority of which have been inscribed on UNESCO’s World
                                                 Heritage List to be protected for future generations. As of 2020, a
                                                 total of 50 South Korean heritage items are listed either as World
@@ -802,7 +841,7 @@
                                     <div class="card mb-3">
                                         <div class="card-body">
                                             <h5 class="card-title">Changdeokgung Palace</h5>
-                                            <p class="card-text">Changdeokgung Palace, located in Waryong-dong,
+                                            <p class="textCard">Changdeokgung Palace, located in Waryong-dong,
                                                 Jongno-gu, Seoul, is one of the five Royal Palaces of the Joseon dynasty
                                                 (1392–1910), and still contains the original palace structures and other
                                                 remains intact. It was built in 1405 as a Royal Villa but became the
@@ -818,7 +857,7 @@
                                                 style="width: 700px;" alt="changdeokgung palace">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">Although it was built during the Joseon dynasty,
+                                            <p class="textCard">Although it was built during the Joseon dynasty,
                                                 Changdeokgung shows traces of the influence of the architectural
                                                 tradition of Goryeo, such as its location at the foot of a mountain.
                                                 Royal palaces were typically built according to a layout planned to
@@ -840,7 +879,7 @@
                                     <div class="card mb-3">
                                         <div class="card-body">
                                             <h5 class="card-title">Seowon, Korean Neo-Confucian Academies</h5>
-                                            <p class="card-text">Seowon were educational institutions intended to teach
+                                            <p class="textCard">Seowon were educational institutions intended to teach
                                                 Neo-Confucianism, which was introduced from China and flourished greatly
                                                 during the Joseon dynasty. Most were established from the mid-16th to
                                                 17th centuries. It comprises nine representative seowon: Sosuseowon,
@@ -856,11 +895,11 @@
                                                 alt="gongsanseong fortress">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">A fortress, which was built along the mountain ridge
+                                            <p class="textCard">A fortress, which was built along the mountain ridge
                                                 and valley near the Geumgang River, initially called Ungjinseong during
                                                 the Baekje period but later renamed Gongsanseong after the Goryeo
                                                 period.</p>
-                                            <p class="card-text">The local literati led seowon and made a significant
+                                            <p class="textCard">The local literati led seowon and made a significant
                                                 contribution to the development and prosperity of seowon-centered
                                                 culture in the Joseon dynasty. The local literati at seowon created
                                                 educational systems and tangible structures so that their younger
@@ -879,7 +918,7 @@
                                     <div class="card mb-3">
                                         <div class="card-body">
                                             <h5>Recreational Forests</h5>
-                                            <p class="card-text">Recreational forests are optimized places for people to
+                                            <p class="textCard">Recreational forests are optimized places for people to
                                                 heal their bodies and minds in a clean nature. There are 170
                                                 recreational forests across the country. They are popular among summer
                                                 vacationers because of diverse valleys. They are also well-equipped with
@@ -892,12 +931,12 @@
                                                 style="width: 613px;" alt="recreational forest">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">Located in Chungju, Chungcheongbuk-do, Gyemyeongsan
+                                            <p class="textCard">Located in Chungju, Chungcheongbuk-do, Gyemyeongsan
                                                 Recreational Forest is at the northern foot of Gyemyeongsan Mountain. It
                                                 is also located east of Chungju Lake, which includes Woraksan National
                                                 Park. No wonder these recreational forests are very popular as tourist
                                                 destinations.</p>
-                                            <p class="card-text">At the present time, Korean arts and culture are
+                                            <p class="textCard">At the present time, Korean arts and culture are
                                                 attracting many enthusiasts around the world. Korea’s cultural and
                                                 artistic achievements through the ages are now leading many of its young
                                                 talents to the world’s most prestigious music and dance competitions,
@@ -913,7 +952,7 @@
                                     <div class="card mb-3">
                                         <div class="card-body">
                                             <h5>Baengnokdam Crater Lake of Hallasan Mountain</h5>
-                                            <p class="card-text">A cauldron-shaped volcanic crater (108 m in depth and
+                                            <p class="textCard">A cauldron-shaped volcanic crater (108 m in depth and
                                                 1,720 m in circumference) atop Hallasan Mountain.</p>
                                         </div>
                                         <div class="text-center">
@@ -921,7 +960,7 @@
                                                 style="width:614px;" alt="hallasan mountain ">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">Hallasan Mountain is the representative tourist
+                                            <p class="textCard">Hallasan Mountain is the representative tourist
                                                 destination of Jeju Island. This is because it is the highest mountain
                                                 in South Korea and allows people to heal their bodies and minds while
                                                 feeling the breath of nature. In addition, this mountain has a variety
@@ -938,7 +977,7 @@
                                     <div class="card mb-3">
                                         <div class="card-body">
                                             <h5>A volcanic island in the East Sea(Dodong Port of Ulleungdo)</h5>
-                                            <p class="card-text">Ulleungdo Island is a volcanic island that represents
+                                            <p class="textCard">Ulleungdo Island is a volcanic island that represents
                                                 South Korea along with Jeju Island. Other than Ulleungdo Island, there
                                                 are Dokdo Island, Jukdo Island, and Gwaneumdo Island (uninhabited).</p>
                                         </div>
@@ -947,7 +986,7 @@
                                                 style="width:622px;" alt="ulleungdo island ">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">Ulleungdo Island is 130 km east of the land, where
+                                            <p class="textCard">Ulleungdo Island is 130 km east of the land, where
                                                 nature has been kept intact from time immemorial. It is filled with
                                                 natural wonders that cannot be seen on the land, such as the clean sea,
                                                 superb coastal scenery created by sheer cliffs, Nari Basin, and the
@@ -969,7 +1008,7 @@
                                     <div class="card mb-3">
                                         <div class="card-body">
                                             <h5>Namsan Park</h5>
-                                            <p class="card-text">Located in Jung-gu, Seoul, Namsan Park is considered a
+                                            <p class="textCard">Located in Jung-gu, Seoul, Namsan Park is considered a
                                                 must-see in Seoul for tourists along with Myeong-dong, but it is more
                                                 like a neighborhood park for Seoul citizens and nearby office workers.
                                                 This is because the park is a recreation area where people can take a
@@ -983,7 +1022,7 @@
                                                 style="width:608px;" alt="namsan park">
                                         </div>
                                         <div class="card-body">
-                                            <p class="card-text">Namsan Park allows visitors to realize the importance
+                                            <p class="textCard">Namsan Park allows visitors to realize the importance
                                                 of nature and the delight of walking. Namsan Mountain standing 265 m
                                                 above sea level, it takes one hour to reach its top on foot along the
                                                 trail from the entrance to the park. Atop the mountain sits Namsan Seoul
@@ -1011,7 +1050,7 @@
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="card-body">
                                     <h5 class="card-title">The Korean Economy – the Miracle on the Hangang River</h5>
-                                    <p class="card-text">South Korea has achieved rapid growth in a short period. The
+                                    <p class="textCard">South Korea has achieved rapid growth in a short period. The
                                         country has displayed global competitiveness in various fields such as mobile
                                         phones, sem....</p>
                                     <a href="#Hangang" class="btn btn-primary">Learn more</a>
@@ -1028,7 +1067,7 @@
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="card-body">
                                     <h5 class="card-title">Korea’s Open Market Capitalist Economy</h5>
-                                    <p class="card-text">South Korea has adopted the open market economy, and is thus
+                                    <p class="textCard">South Korea has adopted the open market economy, and is thus
                                         negotiating with other countries to sign more FTAs, as well as allowing
                                         foreigners to inv...</p>
                                     <a href="#Capitalist" class="btn btn-primary">Learn more</a>
@@ -1045,7 +1084,7 @@
                             <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="card-body">
                                     <h5 class="card-title">Industrial Brand Leaders and Korean Industrial Standards</h5>
-                                    <p class="card-text">The government is committed to diversifying export items and
+                                    <p class="textCard">The government is committed to diversifying export items and
                                         enhancing their quality through the annual selection of first-rate quality
                                         goods. The pro...</p>
                                     <a href="#Industrial" class="btn btn-primary">Learn more</a>
@@ -1059,7 +1098,7 @@
                             <div class="card mb-3">
                                 <div class="card-body">
                                     <h5>South Korean Won (KRW)</h5>
-                                    <p class="card-text">The South Korean Won is the currency of the Republic of Korea –
+                                    <p class="textCard">The South Korean Won is the currency of the Republic of Korea –
                                         more commonly known as South Korea. The won is a decimalized currency, divided
                                         into 100 jeon. The jeon is no longer used for ordinary, everyday transactions.
                                         For practical purposes, the lowest denomination of South Korean currency in use
@@ -1068,7 +1107,7 @@
                                         <img src="src/images/korean_currecny.jpg" class="card-img-top img-fluid"
                                             style="width: 800px;" alt="south korea currency">
                                     </div>
-                                    <p class="card-text">The symbol for the South Korean won is ₩. Thus, an amount of
+                                    <p class="textCard">The symbol for the South Korean won is ₩. Thus, an amount of
                                         5000 won is expressed as ₩5000. The foreign exchange market designation for the
                                         won is KRW (an acronym for Korean Republic Won). As of late 2020, the USD/KRW
                                         exchange rate is 1107.12 – approximately 1100 KRW = 1 USD. Although high, the
@@ -1089,19 +1128,19 @@
                                     <div class="card-body">
                                         <h5 class="card-title">The Korean Economy – the Miracle on the Hangang River
                                         </h5>
-                                        <p class="card-text">South Korea has achieved rapid growth in a short period.
+                                        <p class="textCard">South Korea has achieved rapid growth in a short period.
                                             The country has displayed global competitiveness in various fields such as
                                             mobile phones, semiconductors, automobiles, chemicals, and steelmaking. In
                                             recent years, its cultural content, including music, gaming, and webtoons,
                                             is emerging as an essential industry in itself, taking the lead in the
                                             Korean economy.</p>
-                                        <h5 class="card-text">Market Opening and FTAs</h5>
-                                        <p class="card-text">The country has opened its market in most sectors,
+                                        <h5 class="textCard">Market Opening and FTAs</h5>
+                                        <p class="textCard">The country has opened its market in most sectors,
                                             including agriculture. Koreans have traditionally attached great importance
                                             to agriculture, viewing it as the basis of the universe. In 2015, the
                                             country also opened its rice market, the final area of the agricultural
                                             sector not subject to full international competition.</p>
-                                        <p class="card-text">
+                                        <p class="textCard">
                                             As of 2017, South Korea signed FTAs with 52 countries, including Chile,
                                             EFTA, ASEAN, India, the European Union, Peru, the United States, Turkey,
                                             Australia, Canada, China, New Zealand, Vietnam, and Colombia. In 2017, the
@@ -1124,25 +1163,25 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Korea’s Open Market Capitalist Economy
                                         </h5>
-                                        <p class="card-text">South Korea has adopted the open market economy, and is
+                                        <p class="textCard">South Korea has adopted the open market economy, and is
                                             thus negotiating with other countries to sign more FTAs, as well as allowing
                                             foreigners to invest in the country freely while encouraging domestic
                                             businesses to invest in foreign countries equally freely. The country offers
                                             advantages to foreign investors under the long-term objective of
                                             establishing itself as a major financial hub and logistics base of Northeast
                                             Asia.</p>
-                                        <p class="card-text">The Constitution of South Korea stipulates that “the right
+                                        <p class="textCard">The Constitution of South Korea stipulates that “the right
                                             of property of all citizens shall be guaranteed.” In other words, South
                                             Korea is based on a market economy, and thus it allows individuals and
                                             businesses to freely conduct economic activities and guarantees their
                                             profits and properties.</p>
-                                        <p class="card-text">However, the Constitution does not guarantee the limitless,
+                                        <p class="textCard">However, the Constitution does not guarantee the limitless,
                                             unfettered pursuit of capitalistic free economy. The Constitution stipulates
                                             that an unjust situation shall be rectified if the abuse of capital is found
                                             to
                                             cause damage to people. This serves as a minimal mechanism to improve issues
                                             relating to the free market economy.</p>
-                                        <p class="card-text">
+                                        <p class="textCard">
                                             South Korea has achieved economic growth at an unprecedented speed.
                                             Observers
                                             called what the country has accomplished the “Miracle on the Hangang River”,
@@ -1169,7 +1208,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Industrial Brand Leaders and Korean Industrial Standards
                                         </h5>
-                                        <p class="card-text">The government is committed to diversifying export items
+                                        <p class="textCard">The government is committed to diversifying export items
                                             and enhancing their quality through the annual selection of first-rate
                                             quality goods. The project, which began in 2001 with 120 items and 140
                                             companies, expanded to 817 items and 917 companies in 2019, and their export
@@ -1179,16 +1218,16 @@
                                             2001 to 76% in 2019. Thus, it contributes to enhancing their brand images
                                             and facilitating their entry into the global market.
                                         </p>
-                                        <p class="card-text">Information technology is the strongest element of the
+                                        <p class="textCard">Information technology is the strongest element of the
                                             country’s economy, a sector that encompasses all the skills required for
                                             management innovation and administrative reform as well as ones relating to
                                             computer software, the Internet, multimedia, and communication devices.</p>
-                                        <p class="card-text">South Korea is also one of the world’s largest car
+                                        <p class="textCard">South Korea is also one of the world’s largest car
                                             manufacturing countries. In 2019, the country ranked 7th in the world, with
                                             the number of cars produced reaching 39.51 million. In addition, the country
                                             boasts global competitiveness in other industries such as steel and
                                             chemicals.</p>
-                                        <p class="card-text">
+                                        <p class="textCard">
                                             As a relatively new export sector for South Korea, the export amount of
                                             cultural content rose significantly, from USD 2.3 billion in 2008 to USD 9.6
                                             billion in 2018. Cultural content includes publishing, music, video games,
@@ -1202,7 +1241,7 @@
                                     <div class="card mb-2">
                                         <div class="card-body">
                                             <h5>Writer-Krys Lee</h5>
-                                            <p class="card-text">Krys Lee is a South Korean author, journalist, and
+                                            <p class="textCard">Krys Lee is a South Korean author, journalist, and
                                                 translator. She wrote the short story collection Drifting House and the
                                                 novel How I Became a North Korean. She is an assistant professor of
                                                 creative writing and literature at Underwood International College,
@@ -1212,7 +1251,7 @@
                                                     style="width: 460px;" alt="Krys Lee">
                                             </div>
                                             <h5>Entertainer-Ahn Young-mi</h5>
-                                            <p class="card-text">Ahn Young-mi, is a South Korean comedian. She made her
+                                            <p class="textCard">Ahn Young-mi, is a South Korean comedian. She made her
                                                 debut in KBS' Gag Concert 19th class in 2004 and is best known for her
                                                 provocative wit. In 2018, she joined the comedy-girl group Celeb Five.
                                                 Young-mi is also known as the first female MC of the South Korean talk
@@ -1223,7 +1262,7 @@
                                                     alt="Ahn Young-mi">
                                             </div>
                                             <h5>Politician-Ban Ki-moon</h5>
-                                            <p class="card-text">Ban Ki-moon is a South Korean politician and diplomat
+                                            <p class="textCard">Ban Ki-moon is a South Korean politician and diplomat
                                                 who served as the eighth Secretary-General of the United Nations from
                                                 January 2007 to December 2016. Before becoming Secretary-General, Ban
                                                 was a career diplomat in South Korea's Ministry of Foreign Affairs and
@@ -1235,7 +1274,6 @@
                                                     class="card-img-top img-fluid" style="width: 650px;"
                                                     alt="Ban Ki-moon">
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -1243,12 +1281,487 @@
                         </div>
                     </div>
                 </div> <!--End of Economy Page-->
-                <div id="Education" class="container-fluid tab-pane fade">
-                    <p>Education</p>
-                </div>
-                <div id="Sports" class="container-fluid tab-pane fade">
-                    <p>Sports</p>
-                </div>
+                <div id="KoreanLife" class="container-fluid tab-pane fade"> <!--KoreanLife Page-->
+                    <div class="container">
+                            <div class="col-sm-6 my-3">
+                                <h1 class="posts-title">Education</h1>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-9">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="news">
+                                                <img src="src/images/Korean Life/Education3.jpg" alt="Education"
+                                                    class="img-fluid">
+                                                <h3>A quick look at the Korean education system</h3>
+                                                <p>The Korean education system stands out due to the high performance of
+                                                    its students at the international level according to scores of the
+                                                    Programme for International Student Assessment of the Organisation
+                                                    for Economic Co-operation and Development in subjects like reading
+                                                    and math.
+    
+                                                    Education is highly valued in the country as a way to obtain a
+                                                    prestigious place. Thus students are under heavy pressure from
+                                                    society, teachers and parents, especially when it comes to applying
+                                                    to enter university.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="news">
+                                                <a href="single.html" class="img-link">
+                                                    <img src="src/images/Korean Life/Education1.jpg" alt="Image"
+                                                        class="img-fluid">
+                                                </a>
+                                                <h3>Influence of Korean education system</h3>
+                                                <p>The Korean education system has served as a model for other countries
+                                                    such as Singapore, Thailand, Taiwan and even those in Latin America
+                                                    like Mexico, Argentina and Chile. This is because of the nations'
+                                                    good relations with Korea through academic exchanges conducted by
+                                                    governments and public and private organizations.
+                                                    The number of foreign students in Korea rose to 154,000 last year,
+                                                    according to L. Yoon of Statista, a provider of market and consumer
+                                                    data, thanks to the nation's higher global image, scholarships for
+                                                    international students and the popularity of Hallyu. </p>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+    
+                                    <h2>Education System</h2>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p class="list-title">Public and private</p>
+                                            <p>
+                                                Education in Korea is both private and public. The government provides
+                                                subsidies to students whether they are in public or private schools.</p>
+                                        </li>
+                                        <li>
+                                            <p class="list-title">Pre-school or kindergarten</p>
+                                            <p>This education level in Korea is not compulsory, so students receive no
+                                                subsidies. Yet an estimated 54% of children in Korea ages 2-5 attend
+                                                kindergarten.</p>
+                                        </li>
+                                        <li>
+                                            <p class="list-title">Elementary school</p>
+                                            <p>This is the official entry point of the Korean education system and students
+                                                range from ages 6-13.</p>
+                                        </li>
+                                        <li>
+                                            <p class="list-title">Middle school</p>
+                                            <p>Middle or junior high school consists of three grades and students ages
+                                                14-16.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+    
+                    <section class="section posts-entry posts-entry-sm bg-light">
+                            <div class="container">
+                                <div class="col-sm-6 my-3">
+                                    <h1 class="posts-title">Economy</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="card h-200">
+                                            <img src="src/images/Korean Life/Economy1.jpg" class="card-img-top"
+                                                alt="Economy">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">The Miracle on the Hangang River</h5>
+                                                <p class="card-text">South Korea has achieved rapid growth in a short
+                                                    period. The country has displayed global competitiveness in various
+                                                    fields such as mobile phones, semiconductors, automobiles,
+                                                    chemicals, and steelmaking. In recent years, its cultural content,
+                                                    including music, gaming, and webtoons, is emerging as an essential
+                                                    industry in itself, taking the lead in the Korean economy.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="card h-200">
+                                            <img src="src/images/Korean Life/Economy2.jpg" class="card-img-top"
+                                                alt="Economy">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Open Market Capitalist Economy</h5>
+                                                <p class="card-text">The country has opened its market in most sectors,
+                                                    including agriculture. Koreans have traditionally attached great
+                                                    importance to agriculture, viewing it as the basis of the universe.
+                                                    In 2015, the country also opened its rice market, the final area of
+                                                    the agricultural sector not subject to full international
+                                                    competition.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="card h-200">
+                                            <img src="src/images/Korean Life/Economy3.jpg" class="card-img-top"
+                                                alt="Economy">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Korean Industrial Standards</h5>
+                                                <p class="card-text">Information technology is the strongest element of
+                                                    the country's economy, a sector that encompasses all the skills
+                                                    required for management innovation and administrative reform as well
+                                                    as ones relating to computer software, the Internet, multimedia, and
+                                                    communication devices.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="card h-200">
+                                            <img src="src/images/Korean Life/Economy4.jpg" class="card-img-top"
+                                                alt="Economy">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold">Efforts to Grow as a Global Power</h5>
+                                                <p class="card-text">At present, South Korea is putting every effort
+                                                    into transforming itself into a global economic system. Although the
+                                                    country accomplished rapid growth within a short period of time,
+                                                    this led to an imbalance in the development between large businesses
+                                                    and small and medium-sized enterprises (SMEs) due to the economic
+                                                    policy that was heavily dependent on the export led by large
+                                                    enterprises.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                            </div>
+                    </section>
+    
+                    <section class="section posts-entry">
+                            <div class="container">
+                                <div class="col-sm-6 my-5">
+                                    <h1 class="posts-title">Life</h1>
+                                </div>
+                                <div class="row g-3">
+                                    <div class="col-md-6 order-md-2">
+                                        <div class="news">
+                                            <img class="img-fluid" src="src/images/Korean Life/Religion.png" alt="Religion">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <p>South Korea is a country where all the world's major religions,
+                                                    Christianity, Buddhism, Confucianism, and Islam, peacefully coexist with
+                                                    shamanism. According to the 2015 statistics, 44% of South Koreans
+                                                    identified with a religion.
+    
+                                                    Among them, Buddhism and Confucianism have been more influential than
+                                                    any others upon the life of the Korean people, and over half of the
+                                                    country's listed cultural heritage is related to the two religions.
+                                                    Since Buddhism arrived in Korea in 372, tens of thousands of temples
+                                                    have been built across the country.
+    
+                                                    Adopted as the state ideology of the Joseon dynasty (1392 to 1910),
+                                                    Confucianism is more of a code of ethical conduct that emphasizes the
+                                                    importance of loyalty, filial piety, and ancestor worship. Based on the
+                                                    concepts of Confucianism, the Joseon Dynasty established a code of
+                                                    conduct to settle the manners and customs of the people's lives. It
+                                                    stresses the importance of chung, the loyalty of subjects to their king,
+                                                    hyo, filial, the obedience of children to their parents, and yeol,
+                                                    duties between the husband and the wife.
+                                                    Catholicism was introduced to Korea during the late Joseon dynasty
+                                                    period by diplomats who returned from China and Catholic priests who
+                                                    were invited by the Korean Christians. The early Roman Catholics in
+                                                    Korea were subjected to severe persecution, but the religion continued
+                                                    to spread among the common people across the country. Through the
+                                                    persecution many Christians were martyred by the rulers at that time,
+                                                    which led Korea to yield the world's fourth-largest number of Christian
+                                                    saints.
+                                                    Protestantism was brought to Korea during the late Joseon dynasty period
+                                                    and quickly won people's hearts through school education and medical
+                                                    services. Even today, Protestants in South Korea operate a great number
+                                                    of educational institutions, middle and high schools, colleges and
+                                                    universities, and medical centers.</p>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                                <div class="row g-3 my-5 ">
+                                    <div class="col-md-12 order-md-4">
+                                        <div class="row row-cols-2">
+                                            <div class="col-md-6">
+                                                <div class="entry">
+                                                    <img src="src/images/Korean Life/Clothing.png" alt="clothing"
+                                                        class="img-fluid">
+                                                    <h2>Clothing and Fashion</h2>
+                                                    <p>The Korean people learned to use various clothing materials, such as
+                                                        sambe (hemp), mosi (ramie), cotton, and silk, to make a range of
+                                                        clothing that was not only attractive but also provided them with
+                                                        effective protection even during the harshest winters and the
+                                                        hottest summers. They made warm winter clothes using the technique
+                                                        of wadding soft cotton between two pieces of cloth, silk, or cotton
+                                                        fabric, and stitching them in fine lines, and produced cool summer
+                                                        clothes with hemp and ramie. Hanbok is the traditional Korean attire
+                                                        made with these materials, typically featuring graceful lines and
+                                                        forms with a serene aura.
+    
+                                                        Korea's traditional clothing, hanbok, has maintained its basic
+                                                        traditional features throughout Korea's 5,000-year history while its
+                                                        styles and forms have evolved in various ways based on the
+                                                        lifestyle, social conditions, and aesthetic taste of the times.
+    
+                                                        History reveals that in general, Korean people in the past tended to
+                                                        prefer simple, white clothes to fancy ones. That is why they were
+                                                        often referred to as “the white-clad people” among their neighbors
+                                                        who admired them for being peaceful people. Nonetheless, Korea has
+                                                        also had a long tradition of enjoying colorful clothes with complex
+                                                        designs depending on the period and the wearer's social status.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="entry">
+                                                    <img src="src/images/Korean Life/Food.jpg" alt="Food" class="img-fluid">
+                                                    <h2>Traditional Food</h2>
+                                                    <p>Since ancient times, the Korean people have believed that food and
+                                                        medicine share the same origin and hence perform the same function,
+                                                        following the adage that “food is the best medicine.” They believe
+                                                        that health and illness alike come from the food they consume and
+                                                        how they eat it, and this idea has played a crucial role in the
+                                                        development of traditional Korean medicine whose basic principle is
+                                                        that we should use medicine only after food has failed.
+    
+                                                        One of the key words to understanding traditional Korean food is
+                                                        fermentation, a metabolic process that helps food to “mature” so
+                                                        that it can be stored for a longer period. The Korean foods that
+                                                        best represent the tradition of fermentation developed in Korea
+                                                        include doenjang (soybean paste), ganjang (soy sauce), gochujang
+                                                        (chili paste), and jeotgal (fermented fish sauce). The fermentation
+                                                        can take anywhere from several months to several years.</p>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>                                
+                    </section>
+    
+                    <section class="section">
+                            <div class="container">
+                                <div class="row mb-4">
+                                    <div class="col-sm-6">
+                                        <h2 class="posts-entry-title">Others</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="post-entry-alt">
+                                            <img src="src/images/Korean Life/inter.jpg" alt="Inter-Korean Exchanges"
+                                                class="img-fluid">
+                                            <div class="excerpt">
+                                                <h2>Inter-Korean Exchanges and Cooperation</h2>
+                                                <p>Between September 1990 and October 1992, the two Koreas engaged in a
+                                                    total of eight bilateral meetings, including the first high-level talks
+                                                    held in Seoul. In December 1991, the two sides signed the Agreement on
+                                                    Reconciliation, Nonaggression, and Exchanges and Cooperation between the
+                                                    South and the North (also called the Inter-Korean Basic Agreement). The
+                                                    agreement focused on mutual respect between the two nations, the
+                                                    renunciation of armed aggression, exchange and cooperation in many
+                                                    sectors, and the guarantee of free exchange of people between the two
+                                                    countries.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="post-entry-alt">
+                                            <img src="src/images/Korean Life/housing.jpg" alt="Housing Architectural"
+                                                class="img-fluid">
+                                            <div class="excerpt">
+                                                <h2>Housing Architectural Techniques</h2>
+                                                <p>Korean people have developed unique architectural techniques to build
+                                                    housing that is properly adapted to the natural environment, providing
+                                                    dwellers with better protection. One of the distinctive features of the
+                                                    hanok (traditional Korean house) is an underfloor heating system called
+                                                    ondol. Ondol, which literally means “warm stones” and was developed
+                                                    during the prehistoric period, refers to the system of channels running
+                                                    beneath the stone floor of a room through which heat is delivered from
+                                                    the fireplace in the kitchen. It is also designed to effectively draw
+                                                    out the smoke through the under-the-floor passages connected to the
+                                                    chimney.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-4 mb-4">
+                                        <div class="post-entry-alt">
+                                            <img src="src/images/Korean Life/festivals.jpg" alt="festivals"
+                                                class="img-fluid">
+                                            <div class="excerpt">
+                                                <h2>Inter-Korean Exchanges and Cooperation</h2>
+                                                <p>Until the mid-20th century, Korea was primarily an agricultural society,
+                                                    and the seasonal rhythms of daily life were organized by the lunar
+                                                    calendar. Because farming was hugely important for the subsistence of
+                                                    the members, such society developed a great variety of semi-religious
+                                                    events intended to pray for a good harvest and abundant food. Those
+                                                    events gradually evolved into communal celebrations and festivals.
+                                                    Korean people celebrate the Lunar New Year's Day (Seol or Seollal), with
+                                                    a special festival dish called tteokguk or rice cake soup.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>                                        
+                </div> <!--End of KoreanLife Page-->               
+                <div id="Sports" class="container-fluid tab-pane fade"> <!--Sports Page-->
+                    <div class="section search-result-wrap">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2>Sports</h2>
+                                </div>
+                            </div>
+                            <div class="row entry">
+                                <div class="col-lg-12">
+                                    <div class="card mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="src/images/Korean Life/sport1.jpg" class="card-img-top img-fluid"
+                                                    alt="History and Development">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">History and Development of Korean Sports</h5>
+                                                    <p class="card-text">Korean sports have taken an active part in the global arena over the past
+                                                        century, displaying Koreans' fighting spirit even in harsh environments.
+                                                        In addition, South Korea's hosting of successful international
+                                                        competitions has transformed the country into a sports powerhouse and
+                                                        increased its citizens' interest in the field. South Korea continues to
+                                                        create sports-friendly environments to further its status as a sports
+                                                        powerhouse, with the vision to build a vibrant country where all people
+                                                        can enjoy sports.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="src/images/Korean Life/sport2.jpg" class="card-img-top img-fluid"
+                                                    alt="Infrastructure for Promoting Sports">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Infrastructure for Promoting Sports</h5>
+                                                    <p class="card-text">South Korea has a wider foundation for sports, as elite sports and sports
+                                                        for all are closely connected with each other.
+        
+                                                        Football is one of South Korea's most popular sports. The K League
+                                                        (Korea Professional Football League) runs from March to November each
+                                                        year, with fierce competition among 12 regional teams. It's well worth
+                                                        seeing the enthusiastic cheering by the Red Devils, the official
+                                                        supporting group for the Korea Republic national football team. There
+                                                        are a number of South Korean footballers who have succeeded on the
+                                                        global stage including Park Ji-sung, who played for Manchester United,
+                                                        Tottenham Hotspur forward Son Heung-min, and Ki Sung-yueng at Newcastle
+                                                        United.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="src/images/Korean Life/sport3.jpg" class="card-img-top img-fluid"
+                                                    alt="Sports Powerhouse">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Growth into a Sports Powerhouse</h5>
+                                                    <p class="card-text">The reason why South Korea has been able to become a global sporting
+                                                        powerhouse is attributed to the people physically participating in a
+                                                        range of sporting activities along with systematic investment. It
+                                                        discovers talented young players and trains them scientifically, and
+                                                        allows them to participate in diverse games to gain practical
+                                                        experience. In addition, athletes who will participate in the Olympics
+                                                        or the World Athletics Championships are intensively trained at the
+                                                        separate athletic training center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="src/images/Korean Life/sport4.jpg" class="card-img-top img-fluid"
+                                                    alt="International Competitions">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Higher Status as a Host for International Competitions</h5>
+                                                    <p class="card-text">After liberation from Japanese colonization, Korean sports have made
+                                                        extraordinary achievements. Particularly, since the 1976 Summer Olympics
+                                                        (Games of the XXI Olympiad) and the 1984 Summer Olympics (Games of the
+                                                        XXIII Olympiad), South Korea has ranked in the top ten, remaining as a
+                                                        sporting powerhouse. It has hosted the world's top five mega sports, the
+                                                        Summer Olympics, the Winter Olympics, The FIFA World Cup, the World
+                                                        Athletics Championships, and the FINA World Championships, as well as
+                                                        the Asian Games and the Universiade.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="src/images/Korean Life/sport5.jpg" class="card-img-top img-fluid"
+                                                    alt="History and Development">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Professional Sports, a History Written in Sweat</h5>
+                                                    <p class="card-text">South Korea has professional leagues in sports: soccer, baseball, basketball, volleyball, e-sports and Go (baduk). 
+                                                        Korean professional sports began to develop in 1982 when six professional baseball teams were born. Subsequently, 
+                                                        the Korean football league started in 1983, followed by the professional basketball in 1997 and the professional
+                                                        volleyball in 2005. At present, professional sports are actively developed,
+                                                        centered on four professional sports leagues: football, baseball, basketball, and volleyball.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card mb-3">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                                <img src="src/images/Korean Life/sport6.jpg" class="card-img-top img-fluid"
+                                                    alt="History and Development">
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Transforming into an Advanced Sports Country</h5>
+                                                    <p class="card-text">The government's 100 Policy Tasks presented in 2017 include Task 72: To
+                                                        build a vibrant country where everyone can enjoy sports. The task is
+                                                        intended to highlight the importance of sports for all as a means of
+                                                        promoting life and welfare and building a healthy country, and to create
+                                                        an environment in which all citizens are exposed to sports for all by
+                                                        expanding public sports clubs and personalizing sports programs for each
+                                                        life cycle.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--End of Sports Page-->
             </div><!--end of the main body-->
             <div class="footer container-fluid bg-dark text-white text-center py-2"><!--footer-->
                 <div class="row">
